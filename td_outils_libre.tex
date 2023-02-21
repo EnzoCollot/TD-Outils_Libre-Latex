@@ -267,3 +267,85 @@ Pour qu'il soit de façon permanente, j'ai ajouté cette ligne suivante dans le 
 \begin{center}
   \includegraphics[width=10cm]{Commande.png}
 \end{center}
+
+\newpage
+
+  \subsection{TD-4 : Commande history}
+
+\begin{itemize}
+  \item Regarder votre history
+\end{itemize}
+
+\vspace{0.3cm}
+
+Voici ci-dessous, une capture d'écran de mon history : 
+
+\begin{center}
+  \includegraphics[width=10cm]{history.png}
+\end{center}
+
+\vspace{0.3cm}
+
+\begin{itemize}
+  \item Y a-t-il des informations sensible ? Comment y remédier ?
+\end{itemize}
+
+\vspace{0.3cm}
+
+Oui, il peut y avoir des informations sensibles dans le history comme les mot de passe etc. Pour remédier à cela, nous pouvons utiliser un autre interpréteur de commande comme ZSH.
+
+\vspace{0.3cm}
+
+\begin{itemize}
+  \item Un employé de longue date semble avoir un \texttt{history} très court, quelle sont les causes possibles ?\\
+  \vspace{0.3cm}
+  ~ cat ~/.bash\_history\\
+  \vspace{0.3cm}
+  sudo apt install curl zsh git\\
+  \vspace{0.3cm}
+  sh -c "(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)" 
+\end{itemize}
+
+\vspace{0.3cm}
+
+On peut constater que cette employé à utiliser un autre interpréteur de commande qui est ZSH en le combinant avec OHMYZSH. Donc on ne peut plus voir son hisotry dans bash\_history.
+
+\vspace{0.3cm}
+
+\begin{itemize}
+  \item Nos history sont souvent pollués par beaucoup de ls, cd, pwd ... Ces commandes sont tellement courtes que les taper entièrement est plus rapide. On veut éviter qu'elles n'apparaissent dans les résultats de recherche de l'history, comment faire ?
+\end{itemize}
+
+\vspace{0.3cm}
+
+Pour eviter d'avoir certaine commande dans notre hisotry, on peut ajouter l'option \texttt{HISTIGNORE} dans le fichier bashrc : 
+
+\vspace{0.3cm}
+
+\begin{center}
+  \includegraphics[width=10cm]{HISTIGNORE.png}
+\end{center}
+
+\vspace{0.3cm}
+
+\newpage
+
+Voici le resulat ci-dessous : 
+
+\vspace{0.3cm}
+
+\begin{figure}[h]
+  \centering
+  \begin{subfigure}{0.45\textwidth}
+    \centering
+    \includegraphics[width=\textwidth]{commande_test.png}
+    \caption{Quelque commande pour tester HISTIGNORE}
+  \end{subfigure}
+  \vspace{0.9cm} % Espace verticale entre les images
+  \begin{subfigure}{0.45\textwidth}
+    \centering
+    \includegraphics[width=\textwidth]{history1.png}
+    \caption{Résultat dans history}
+  \end{subfigure}
+  \caption{Deux captures d'écran montrant un test de HISTIGNORE}
+\end{figure}
