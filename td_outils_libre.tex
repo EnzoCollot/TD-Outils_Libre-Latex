@@ -349,3 +349,51 @@ Voici le resulat ci-dessous :
   \end{subfigure}
   \caption{Deux captures d'écran montrant un test de HISTIGNORE}
 \end{figure}
+
+\newpage
+
+  \subsection{TD-8 : Raccourci-ZSH}
+
+\vspace{0.3cm}
+
+\begin{itemize}
+  \item Dans zsh, créer un raccourci \texttt{Ctrl + Shift + A} :\\
+  Lance les services apache et mariadb\\
+  Log dans le terminal quand tout est lancé\\
+  Ce reccourci est un interrupteur : apache et mariadb s'arrêtent si j'appuie à nouveau dessus.
+\end{itemize}
+
+\vspace{0.3cm}
+
+Pour répondre à la question, nous allons tout d'abord crée un script bash comme ci-dessous : 
+
+\vspace{0.3cm}
+
+\begin{center}
+  \includegraphics[width=7cm]{Sevices.png}
+\end{center}
+
+\vspace{0.3cm}
+
+Maintenant que nous avons crée le scrpite .sh, nous allons crée deux fonctions dans le fichier .zshrc pour faire fonctionner le script comme ci-dessous : 
+
+\vspace{0.3cm}
+
+\begin{center}
+  \includegraphics[width=7cm]{fonction\_zsh.png}
+\end{center}
+
+\vspace{0.3cm}
+
+Maintenant que nous avons crée les deux fonctions, nous allons les combinaison de touche dans le fichier .zshrc comme ci-dessous : 
+
+\vspace{0.3cm}
+
+\begin{center}
+  \includegraphics[width=7cm]{bindkey.png}
+\end{center}
+
+\vspace{0.3cm}
+
+Il nous reste plus qu'à utiliser la commande \texttt{source ~/.zshrc} pour que les modification soient prises en comptes.
+
