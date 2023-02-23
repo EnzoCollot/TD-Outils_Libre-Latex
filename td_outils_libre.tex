@@ -834,14 +834,14 @@ Une fois que nous avons enregistrer le fichier, c'est bon, on peut ce connecter 
 \subsection{TD-3-SSH : Connexion Automatique}
 
 \begin{itemize}
-  \item Purger le fichier ~/.ssh/known_hosts si nécessaire ?
+  \item Purger le fichier ~/.ssh/known\_hosts si nécessaire ?
 \end{itemize}
 
 \vspace{0.3cm}
 
-Pour cette nouvelle étape, nous allons purger le fichier ~/.ssh/known_hosts avec la commande suivante : 
+Pour cette nouvelle étape, nous allons purger le fichier ~/.ssh/known\_hosts avec la commande suivante : 
 
-\texttt{sudo rm knownhost}
+\texttt{sudo rm known\_host}
 
 \vspace{0.3cm}
 
@@ -858,7 +858,7 @@ Voici les étapes pour ajouter manuellement la clé publique du serveur srv au f
 
 Tout d'abord, on va utiliser la commande ssh-keyscan pour récupérer la clé publique du serveur srv. Dans un terminal, on va utiliser la commande suivante : 
 
-\texttt{ssh-keyscan 10.0.0.3 >> ~/.ssh/known_hosts}
+\texttt{ssh-keyscan 10.0.0.3 >> ~/.ssh/known\_hosts}
 
 \vspace{0.3cm}
 
@@ -889,7 +889,7 @@ Ensuite, on va utiliser la commande ssh-keygen pour générer une paire de clés
 
 Une fois que nous avons généré une paire de clés SSH, nous allons  copier la clé publique sur le serveur srv. Pour ce faire, nous allons entrer la commande suivante dans le terminal :
 
-\texttt{ssh-copy-id -i ~/.ssh/id_rsa.pub user@srv} 
+\texttt{ssh-copy-id -i ~/.ssh/id/\_rsa.pub user@srv} 
 
 \vspace{0.3cm}
 
