@@ -694,4 +694,135 @@ Voici, ci-dessous l'history local :
 
 On peut constater que nous ne voyons pas les mots de passe que nous avons entrés pour nous connecter au serveur srv avec un utilisateur.
 
+
+\subsection{TD-2-SSH : Authentification Publique}
+
+\vspace{0.3cm}
+
+\begin{itemize}
+  \item Créer une paire de clés privée et publique à l'aide de ssh-keygen ?
+\end{itemize}
+
+Pour cette nouvelle étape, nous allons créer une paire de clés privée et publique à l'aide de ssh-keygen. Donc voici les étape ci-dessous pour le faire : 
+
+\vspace{0.3cm}
+
+Pour commencer, nous allons ouvrie un terminal est taper la commande suivante  : 
+
+\vspace{0.3cm}
+
+\begin{center}
+  \includegraphics[width=7cm]{Image-TD-SSH-2/ssh-keygen.png}
+\end{center}
+
+\vspace{0.3cm}
+
+Ensuite, il nous demande à quel emplacement nous voulons enregistrer notre clé. Nous laissons par défaut :
+
+\vspace{0.3cm}
+
+\begin{center}
+  \includegraphics[width=7cm]{Image-TD-SSH-2/Emplacement-cle.png}
+\end{center}
+
+\vspace{0.3cm}
+
+Ensuite, il nous demande une passphrase. Vous pouvez en indiquer une, mais j'ai laissé par défaut. Une fois que c'est fini, vous devez avoir cela qui devrait apparaître :
+
+\vspace{0.3cm}
+
+\begin{center}
+  \includegraphics[width=7cm]{Image-TD-SSH-2/Génération-cle.png}
+\end{center}
+
+\vspace{0.3cm}
+
+Voila, nous avons générer une clé rsa.
+
+\vspace{0.3cm}
+
+\begin{itemize}
+  \item Utiliser la commande ssh-copy-id pour déposer la clé publique sur le compte alice@cli . Vérifier qu'on peut maintenant se connecter sans mot de passe ?
+\end{itemize}
+
+\vspace{0.3cm}
+
+Pour cette nouvelle étape, nous allons utiliser la commande ssh-copy-id pour déposer la clé publique sur le compte alice@cli. Pour ce faire, nous allons utiliser la commande suivantes : 
+
+\vspace{0.3cm}
+
+\begin{center}
+  \includegraphics[width=7cm]{Image-TD-SSH-2/ssh-copy-id.png}
+\end{center}
+
+\vspace{0.3cm}
+
+Une fois que nous avons entrée la commande, il va nous demander le mot de passe de Alice. Une fois le mots de passe entrer, nous avons ceci qui apparaît : 
+
+\vspace{0.3cm}
+
+\begin{center}
+  \includegraphics[width=7cm]{Image-TD-SSH-2/key-add.png}
+\end{center}
+
+\vspace{0.3cm}
+
+Maintenant, on peut ce connecter en compte d'alice sur le serveur cli sans rentrer son mots de passe.
+
+\vspace{0.3cm}
+
+\begin{itemize}
+  \item Déposer manuellement la clé publique sur le compte bob@cli \\
+  Les nouvelles clés créés sont dans ~/.ssh\\
+  Les clées autorisées à se connecter au serveur sont dans ~/.ssh/authorized_keys
+\end{itemize}
+
+\vspace{0.3cm}
+
+Pour déposer manuellement la clé publique sur le compte bob@cli, vous pouvez suivre les étapes ci-dessous : 
+
+\vspace{0.3cm}
+
+Pour commencer, nous allons afficher le contenue de notre clé publique et le copier avec la commande suivante : 
+
+\vspace{0.3cm}
+
+\begin{center}
+  \includegraphics[width=7cm]{Image-TD-SSH-2/Clé-pub.png}
+\end{center}
+
+\vspace{0.3cm}
+
+Une fois que nous avons copier la clé publique, nous allons nous connecter au compte de bob@cli avec la commande suivante : \\
+
+\texttt{ssh bob@cli}
+
+\vspace{0.3cm}
+
+Une fois connecter sur le compte, nous allons verifier si le dossier .ssh existe. Si il existe pas, nous le créons avec la commande suivante : \\
+
+\texttt{mkdir ~/.ssh}
+
+\vspace{0.3cm}
+
+Ensuite, on tape la commande suivante pour créer ou ouvrir le fichier "authorized_keys" : \\
+
+\texttt{nano ~/.ssh/authorized_keys}
+
+\vspace{0.3cm}
+
+Maintenant, on copie le contenue de la clé publique dans le fichier comme ci-dessous  : 
+
+\vspace{0.3cm}
+
+\begin{center}
+  \includegraphics[width=7cm]{Image-TD-SSH-2/clé-pub-bob.png}
+\end{center}
+
+\vspace{0.3cm}
+
+Une fois que nous avons enregistrer le fichier, c'est bon, on peut ce connecter au compte de bob@cli sans taper le mot de passe avec la commande suivante : \\  
+
+\texttt{ssh -i ~/.ssh/nom_de_votre_clef bob@cli}
+
 \end{document}
