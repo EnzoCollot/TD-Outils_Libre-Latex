@@ -534,4 +534,156 @@ Pour désinstaller les autre terminaux, nous allons utiliser la commande suivant
 sudo apt-get remove (le nom de terminal). Par exemple : sudo apt-get remove tilix.
 
 
+
+
+\newpage
+
+\section{Client SSH}
+
+  \subsection{TD-1-SSH : Utilisation SSH}
+
+\begin{itemize}
+  \item Récupérer et démarrer l'environnement Vagrant sur arche ?
+\end{itemize}
+
+\vspace{0.3cm}
+
+Pour ce nouveau TD, nous allons utiliser Vagrant pour utiliser SSH. Pour ce faire, nous allons télécharger depuis Arche le fichier Vagrant. Une fois que le fichier Vagrant est téléchargé, nous allons exécuter la machine Vagrant avec la commande ci-dessous :
+
+\vspace{0.3cm}
+
+\begin{center}
+  \includegraphics[width=7cm]{Image-TD-SSH-1/vagrant_up.png}
+\end{center}
+
+\vspace{0.3cm}
+
+Une fois que la commande est terminer, on doit avoir ceci comment message qui indique que les machine sont bien démarrer : 
+
+\vspace{0.3cm}
+
+\begin{center}
+  \includegraphics[width=7cm]{Image-TD-SSH-1/Machine.png}
+\end{center}
+
+\vspace{0.3cm}
+
+\begin{itemize}
+  \item Se connecter à la machine srv avec les utilisateurs alice, bob et carole sans utiliser vagrant ssh ?
+\end{itemize}
+
+\vspace{0.3cm}
+
+Pour se connecter à la machine srv avec les utilisateurs alice, bob et carole sans utiliser vagrant ssh, nous allons utiliser la commande suivante : 
+
+\vspace{0.3cm}
+
+Connexion à l'utilisateur alice en ssh  : 
+
+\vspace{0.3cm}
+
+\begin{figure}[h]
+  \centering
+  \begin{subfigure}{0.45\textwidth}
+    \centering
+    \includegraphics[width=\textwidth]{Image-TD-SSH-1/SSH-Alice.png}
+    \caption{Connexion SSH avec l'utilisateur Alice}
+  \end{subfigure}
+  \vspace{0.9cm} % Espace verticale entre les images
+  \begin{subfigure}{0.45\textwidth}
+    \centering
+    \includegraphics[width=\textwidth]{Image-TD-SSH-1/Connexion-SSH-Alice.png}
+    \caption{Connexion Réussie avec l'utilisateur Alice}
+  \end{subfigure}
+  \caption{Deux captures d'écran montrants une connexion en ssh au serveur srv avec l'utilisateur Alice}
+\end{figure}
+
+\vspace{0.3cm}
+
+Maintenant que nous avons réussi à nous connecter au serveur "srv" avec l'utilisateur "Alice", nous allons faire la même chose pour les deux autres utilisateurs.
+
+\vspace{0.3cm}
+
+Connexion à l'utilisateur bob en ssh  : 
+
+\vspace{0.3cm}
+
+\begin{figure}[h]
+  \centering
+  \begin{subfigure}{0.45\textwidth}
+    \centering
+    \includegraphics[width=\textwidth]{Image-TD-SSH-1/SSH-Bob.png}
+    \caption{Connexion SSH avec l'utilisateur Bob}
+  \end{subfigure}
+  \vspace{0.9cm} % Espace verticale entre les images
+  \begin{subfigure}{0.45\textwidth}
+    \centering
+    \includegraphics[width=\textwidth]{Image-TD-SSH-1/Connexion-SSH-Bob.png}
+    \caption{Connexion Réussie avec l'utilisateur Bob}
+  \end{subfigure}
+  \caption{Deux captures d'écran montrants une connexion en ssh au serveur srv avec l'utilisateur Bob}
+\end{figure}
+
+\vspace{0.3cm}
+
+Connexion à l'utilisateur carol en ssh  : 
+
+\vspace{0.3cm}
+
+\begin{figure}[h]
+  \centering
+  \begin{subfigure}{0.45\textwidth}
+    \centering
+    \includegraphics[width=\textwidth]{Image-TD-SSH-1/SSH-Carol.png}
+    \caption{Connexion SSH avec l'utilisateur Carol}
+  \end{subfigure}
+  \vspace{0.9cm} % Espace verticale entre les images
+  \begin{subfigure}{0.45\textwidth}
+    \centering
+    \includegraphics[width=\textwidth]{Image-TD-SSH-1/Connexion-SSH-Carol.png}
+    \caption{Connexion Réussie avec l'utilisateur Carol}
+  \end{subfigure}
+  \caption{Deux captures d'écran montrants une connexion en ssh au serveur srv avec l'utilisateur Carol}
+\end{figure}
+
+\vspace{0.3cm}
+
+\begin{itemize}
+  \item Vérifier qu'on est bien sur la machine Vagrant et pas en local ?
+\end{itemize}
+
+\vspace{0.3cm}
+
+Pour verifier que nous somme bien sur la machine vagrant et non en local, nous allons utiliser la commande suivante : 
+
+\vspace{0.3cm}
+
+\begin{center}
+  \includegraphics[width=7cm]{Image-TD-SSH-1/Commande-IPA.png}
+\end{center}
+
+\vspace{0.3cm}
+
+On peut constater qu'au niveau des adresses IP, nous avons celle du serveur "srv", donc nous sommes bien sur la machine "vagrant".
+
+\vspace{0.3cm}
+
+\begin{itemize}
+  \item Consulter l' history local, que remarque-t-on ?
+\end{itemize}
+
+\vspace{0.3cm}
+
+Voici, ci-dessous l'history local : 
+
+\vspace{0.3cm}
+
+\begin{center}
+  \includegraphics[width=7cm]{Image-TD-SSH-1/History-Local.png}
+\end{center}
+
+\vspace{0.3cm}
+
+On peut constater que nous ne voyons pas les mots de passe que nous avons entrés pour nous connecter au serveur srv avec un utilisateur.
+
 \end{document}
