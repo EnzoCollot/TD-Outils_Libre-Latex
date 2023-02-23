@@ -727,6 +727,9 @@ Ensuite, il nous demande à quel emplacement nous voulons enregistrer notre clé
 
 \vspace{0.3cm}
 
+\newpage
+
+
 Ensuite, il nous demande une passphrase. Vous pouvez en indiquer une, mais j'ai laissé par défaut. Une fois que c'est fini, vous devez avoir cela qui devrait apparaître :
 
 \vspace{0.3cm}
@@ -774,7 +777,7 @@ Maintenant, on peut ce connecter en compte d'alice sur le serveur cli sans rentr
 \begin{itemize}
   \item Déposer manuellement la clé publique sur le compte bob@cli \\
   Les nouvelles clés créés sont dans ~/.ssh\\
-  Les clées autorisées à se connecter au serveur sont dans ~/.ssh/authorized_keys
+  Les clées autorisées à se connecter au serveur sont dans ~/.ssh/authorized\_keys
 \end{itemize}
 
 \vspace{0.3cm}
@@ -793,6 +796,8 @@ Pour commencer, nous allons afficher le contenue de notre clé publique et le co
 
 \vspace{0.3cm}
 
+\newpage
+
 Une fois que nous avons copier la clé publique, nous allons nous connecter au compte de bob@cli avec la commande suivante : \\
 
 \texttt{ssh bob@cli}
@@ -805,9 +810,9 @@ Une fois connecter sur le compte, nous allons verifier si le dossier .ssh existe
 
 \vspace{0.3cm}
 
-Ensuite, on tape la commande suivante pour créer ou ouvrir le fichier "authorized_keys" : \\
+Ensuite, on tape la commande suivante pour créer ou ouvrir le fichier "authorized\_keys" : \\
 
-\texttt{nano ~/.ssh/authorized_keys}
+\texttt{nano ~/.ssh/authorized\_keys}
 
 \vspace{0.3cm}
 
@@ -823,6 +828,6 @@ Maintenant, on copie le contenue de la clé publique dans le fichier comme ci-de
 
 Une fois que nous avons enregistrer le fichier, c'est bon, on peut ce connecter au compte de bob@cli sans taper le mot de passe avec la commande suivante : \\  
 
-\texttt{ssh -i ~/.ssh/nom_de_votre_clef bob@cli}
+\texttt{ssh -i ~/.ssh/id\_rsa.pub bob@cli}
 
 \end{document}
