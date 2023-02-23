@@ -37,7 +37,7 @@ footskip=15mm}
 
     \thispagestyle{empty}
     \begin{center}
-        \includegraphics[width=12cm]{logo_iut.jpg}
+        \includegraphics[width=12cm]{Image-TD-1/logo_iut.jpg}
         \end{center}
 
 \vspace{1cm}
@@ -178,13 +178,13 @@ Screen de l'interface du site :
   \centering
   \begin{subfigure}{0.45\textwidth}
     \centering
-    \includegraphics[width=\textwidth]{image_site_tap_touche.png}
+    \includegraphics[width=\textwidth]{Image-TD-2/image_site_tap_touche.png}
     \caption{Page principale du site}
   \end{subfigure}
   \vspace{0.9cm} % Espace verticale entre les images
   \begin{subfigure}{0.45\textwidth}
     \centering
-    \includegraphics[width=\textwidth]{image_site_tap_touche2.png}
+    \includegraphics[width=\textwidth]{Image-TD-2/image_site_tap_touche2.png}
     \caption{Page pour effectuer le test de rapidité}
   \end{subfigure}
   \caption{Deux captures d'écran du site TapTouch}
@@ -203,7 +203,7 @@ Inclure quelques résultats de rapidité.
 Premier test effectué le 22/12/2022 : 
 
 \begin{center}
-  \includegraphics[width=10cm]{Premier_test.png}
+  \includegraphics[width=10cm]{Image-TD-2/Premier_test.png}
 \end{center}
 
 \vspace{0.3cm}
@@ -213,7 +213,7 @@ Premier test effectué le 22/12/2022 :
 Deuxième test effectué le 23/12/2022 :
 
 \begin{center}
-  \includegraphics[width=10cm]{Deuxième_test.png}
+  \includegraphics[width=10cm]{Image-TD-2/Deuxième_test.png}
 \end{center}
 
 \subsection{TD-3 : Vim et Emacs}
@@ -265,7 +265,7 @@ Pour qu'il soit de façon permanente, j'ai ajouté cette ligne suivante dans le 
 \vspace{0.3cm}
 
 \begin{center}
-  \includegraphics[width=10cm]{Commande.png}
+  \includegraphics[width=10cm]{Image-TD-3/Ajout-ligne-bashrc.png}
 \end{center}
 
 \newpage
@@ -281,7 +281,7 @@ Pour qu'il soit de façon permanente, j'ai ajouté cette ligne suivante dans le 
 Voici ci-dessous, une capture d'écran de mon history : 
 
 \begin{center}
-  \includegraphics[width=10cm]{history.png}
+  \includegraphics[width=10cm]{Image-TD-4/history.png}
 \end{center}
 
 \vspace{0.3cm}
@@ -323,7 +323,7 @@ Pour eviter d'avoir certaine commande dans notre hisotry, on peut ajouter l'opti
 \vspace{0.3cm}
 
 \begin{center}
-  \includegraphics[width=10cm]{HISTIGNORE.png}
+  \includegraphics[width=10cm]{Image-TD-4/HISTIGNORE.png}
 \end{center}
 
 \vspace{0.3cm}
@@ -338,17 +338,98 @@ Voici le resulat ci-dessous :
   \centering
   \begin{subfigure}{0.45\textwidth}
     \centering
-    \includegraphics[width=\textwidth]{commande_test.png}
+    \includegraphics[width=\textwidth]{Image-TD-4/commande_test.png}
     \caption{Quelque commande pour tester HISTIGNORE}
   \end{subfigure}
   \vspace{0.9cm} % Espace verticale entre les images
   \begin{subfigure}{0.45\textwidth}
     \centering
-    \includegraphics[width=\textwidth]{history1.png}
+    \includegraphics[width=\textwidth]{Image-TD-4/history1.png}
     \caption{Résultat dans history}
   \end{subfigure}
   \caption{Deux captures d'écran montrant un test de HISTIGNORE}
 \end{figure}
+
+\subsection{TD-5 : Alias}
+
+\begin{itemize}
+  \item Il est possible de créer des alias avec des arguments à l'aide des bash functions : 
+\end{itemize}
+
+\vspace{0.3cm}
+
+Ecrire une bash function mkcd mondossier qui crée le dossier mondosser puis navigue dedans. 
+
+\vspace{0.3cm}
+
+Voici les étapes ci-dessous pour créer une bash function mkcd : 
+
+\vspace{0.3cm}
+
+\begin{center}
+  \includegraphics[width=10cm]{Image-TD-5/mkcd.png}
+\end{center}
+
+\vspace{0.3cm}
+
+Ecrire une bash function gitemergency qui add, commit, et push tout son travail sur l'origine, permettant de ne rien perdre en cas d'alerte d'incendie.
+
+\vspace{0.3cm}
+
+Voici les étapes ci-dessous pour créer une bash function gitemergency : 
+
+\vspace{0.3cm}
+
+\begin{center}
+  \includegraphics[width=14cm]{Image-TD-5/gitemergency.png}
+\end{center}
+
+\newpage
+
+\subsection{TD-8 : Raccourci ZSH}
+
+\vspace{0.3cm}
+
+\begin{itemize}
+  \item Dans zsh, créer un raccourci \texttt{Ctrl + Shift + A} :\\
+  Lance les services apache et mariadb\\
+  Log dans le terminal quand tout est lancé\\
+  Ce reccourci est un interrupteur : apache et mariadb s'arrêtent si j'appuie à nouveau dessus.
+\end{itemize}
+
+\vspace{0.3cm}
+
+Pour répondre à la question, nous allons tout d'abord crée un script bash comme ci-dessous : 
+
+\vspace{0.3cm}
+
+\begin{center}
+  \includegraphics[width=7cm]{Image-TD-8/Sevices.png}
+\end{center}
+
+\vspace{0.3cm}
+
+Maintenant que nous avons crée le scrpite .sh, nous allons crée deux fonctions dans le fichier .zshrc pour faire fonctionner le script comme ci-dessous : 
+
+\vspace{0.3cm}
+
+\begin{center}
+  \includegraphics[width=7cm]{Image-TD-8/fonction\_zsh.png}
+\end{center}
+
+\vspace{0.3cm}
+
+Maintenant que nous avons crée les deux fonctions, nous allons les combinaison de touche dans le fichier .zshrc comme ci-dessous : 
+
+\vspace{0.3cm}
+
+\begin{center}
+  \includegraphics[width=7cm]{Image-TD-8/bindkey.png}
+\end{center}
+
+\vspace{0.3cm}
+
+Il nous reste plus qu'à utiliser la commande \texttt{source ~/.zshrc} pour que les modification soient prises en comptes.
 
 \newpage
 
@@ -375,7 +456,7 @@ Image de Terminator :
 \vspace{0.3cm}
 
 \begin{center}
-  \includegraphics[width=7cm]{terminator.png}
+  \includegraphics[width=7cm]{Image-TD-9/terminator.png}
 \end{center}
 
 \vspace{0.3cm}
@@ -389,7 +470,7 @@ Image de Kitty :
 \vspace{0.3cm}
 
 \begin{center}
-  \includegraphics[width=7cm]{Kitty.png}
+  \includegraphics[width=7cm]{Image-TD-9/Kitty.png}
 \end{center}
 
 \newpage
@@ -405,7 +486,7 @@ Image de Tilix :
 \vspace{0.3cm}
 
 \begin{center}
-  \includegraphics[width=7cm]{Tilix.png}
+  \includegraphics[width=7cm]{Image-TD-9/Tilix.png}
 \end{center}
 
 \vspace{0.3cm}
