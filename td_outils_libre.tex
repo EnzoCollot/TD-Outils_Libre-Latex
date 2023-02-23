@@ -830,4 +830,133 @@ Une fois que nous avons enregistrer le fichier, c'est bon, on peut ce connecter 
 
 \texttt{ssh -i ~/.ssh/id\_rsa.pub bob@cli}
 
+
+\subsection{TD-3-SSH : Connexion Automatique}
+
+\begin{itemize}
+  \item Purger le fichier ~/.ssh/known_hosts si nécessaire ?
+\end{itemize}
+
+\vspace{0.3cm}
+
+Pour cette nouvelle étape, nous allons purger le fichier ~/.ssh/known_hosts avec la commande suivante : 
+
+\texttt{sudo rm knownhost}
+
+\vspace{0.3cm}
+
+\begin{itemize}
+  \item A l'aide de ssh-keygen et ssh-keyscan , ajouter la clé publique du serveur srv manuellement, décrire les étapes. \\
+  Votre client SSH ne doit pas demander d'ajouter la clé publique du serveur à la première connexion.
+\end{itemize}
+
+\vspace{0.3cm}
+
+Voici les étapes pour ajouter manuellement la clé publique du serveur srv au fichier known_hosts à l'aide des commandes ssh-keygen et ssh-keyscan :
+
+\vspace{0.3cm}
+
+Tout d'abord, on va utiliser la commande ssh-keyscan pour récupérer la clé publique du serveur srv. Dans un terminal, on va utiliser la commande suivante : 
+
+\texttt{ssh-keyscan 10.0.0.3 >> ~/.ssh/known_hosts}
+
+\vspace{0.3cm}
+
+\begin{center}
+  \includegraphics[width=7cm]{Image-TD-SSH-3/ssh-keyscan.png}
+\end{center}
+
+\vspace{0.3cm}
+
+\begin{center}
+  \includegraphics[width=7cm]{Image-TD-SSH-3/résultat-ssh-keyscan.png}
+\end{center}
+
+\vspace{0.3cm}
+
+Ensuite, on va utiliser la commande ssh-keygen pour générer une paire de clés SSH (une clé publique et une clé privée) sur l'ordinateur local. Dans le même terminal, tapez la commande suivante :
+
+\texttt{ssh-keygen}
+
+\vspace{0.3cm}
+
+\begin{center}
+  \includegraphics[width=7cm]{Image-TD-SSH-3/Génération-key.png}
+\end{center}
+
+
+\vspace{0.3cm}
+
+Une fois que nous avons généré une paire de clés SSH, nous allons  copier la clé publique sur le serveur srv. Pour ce faire, nous allons entrer la commande suivante dans le terminal :
+
+\texttt{ssh-copy-id -i ~/.ssh/id_rsa.pub user@srv} 
+
+\vspace{0.3cm}
+
+Ici, user@srv on remplace par les utilisateur sur le serveur srv. un petit exemple ci-dessous  : 
+
+\vspace{0.3cm}
+
+\begin{center}
+  \includegraphics[width=7cm]{Image-TD-SSH-3/ssh-copy-id.png}
+\end{center}
+
+\vspace{0.3cm}
+
+Voila, maintenant, on peut se connecter automatique avec l'utilisateur bob au serveur srv.
+
+\vspace{0.3cm}
+
+\begin{itemize}
+  \item Créer un fichier de configuration pour SSH, vous permettant de vous connecter sur le compte bob@cli en tapant ssh bc.
+\end{itemize}
+
+\vspace{0.3cm}
+
+Voici les étapes pour créer un fichier de configuration pour SSH qui permettra de se connecter au compte bob@cli en tapant simplement ssh bc :
+
+\vspace{0.3cm}
+
+Pour commencer, nous allons tapez la commande suivante pour créer un nouveau fichier de configuration SSH :
+
+\texttt{nano ~/.ssh/config}
+
+\vspace{0.3cm}
+
+\begin{center}
+  \includegraphics[width=7cm]{Image-TD-SSH-3/fichier-config.png}
+\end{center}
+
+\vspace{0.3cm}
+
+Dans le fichier de configuration, ajoutez les lignes suivantes :
+
+\vspace{0.3cm}
+
+\begin{center}
+  \includegraphics[width=7cm]{Image-TD-SSH-3/ligne-conf.png}
+\end{center}
+
+\vspace{0.3cm}
+
+Une fois que nous avons mis les informations dans le fichier de configuration, nous pouvons nous connecter comme ci-dessous : 
+
+\vspace{0.3cm}
+
+\begin{figure}[h]
+  \centering
+  \begin{subfigure}{0.30\textwidth}
+    \centering
+    \includegraphics[width=\textwidth]{Image-TD-SSH-3/Connexion-SSH-Complétion.png}
+    \caption{Connexion SSH en utilisant l'auto-complétion}
+  \end{subfigure}
+  \vspace{0.9cm} % Espace verticale entre les images
+  \begin{subfigure}{0.45\textwidth}
+    \centering
+    \includegraphics[width=\textwidth]{Image-TD-SSH-3/Connexion-réussite.png}
+    \caption{Connexion réussite avec l'utilisateur Bob}
+  \end{subfigure}
+  \caption{Deux captures d'écran montrants une connexion en ssh au serveur srv avec l'utilisateur bob en utilisant l'auto-complétion}
+\end{figure}
+
 \end{document}
