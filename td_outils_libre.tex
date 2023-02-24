@@ -1245,4 +1245,58 @@ On peut constater que nous arrivons à accéder à la page web.
 
 \vspace{0.3cm}
 
+\newpage
+
+\subsection{TD-SSH-7 : X11 Forward}
+
+\vspace{0.3cm}
+
+\begin{itemize}
+  \item Installer une application graphique sur cli (par exemple xclock ou xeyes ,disponibles dans le paquet x11-apps ), ainsi que xauth (disponible dans le paquet xauth ).
+\end{itemize}
+
+\vspace{0.3cm}
+
+Pour cette nouvelle étape, nous allons une application graphique sur le serveur cli. Pour ce faire, nous allons nous connecter sur le serveur cli et installer les application suivante : 
+
+\texttt{sudo apt-get install x11-apps} \\
+\texttt{sudo apt-get install xauth}
+
+\vspace{0.3cm}
+
+Maintenant que nous avons installer ces deux paquets, nous pouvons passé à la suite.
+
+\vspace{0.3cm}
+
+\begin{itemize}
+  \item Se connecter sur cli en activant le forwarding X11.
+\end{itemize}
+
+\vspace{0.3cm}
+
+Pour ce connecter sur cli en activant le forwarding X11, nous allons utiliser la commande ci-dessous : 
+
+\vspace{0.3cm}
+
+\begin{center}
+  \includegraphics[width=7cm]{Image-TD-SSH-7/SSH-Forwarding-X11.png}
+\end{center}
+
+\vspace{0.3cm}
+
+Une fois que nous somme connecter, nous pouvons passer à la suite. 
+
+\vspace{0.3cm}
+
+\begin{itemize}
+  \item Vérifier que vous pouvez lancer les applications graphiques installées et que les GUI s'affichent sur le poste local.
+\end{itemize}
+
+\vspace{0.3cm}
+
+
+
+
+
+
 \end{document}
