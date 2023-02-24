@@ -1126,4 +1126,56 @@ Une fois que nous somme connecter, nous allons regarder les information dans le 
 
 On peut constater que notre fichier à bien était modifier.
 
+\newpage
+
+\vspace{0.3cm}
+
+\begin{itemize}
+  \item Créer un tunnel SSH entre votre poste et srv à travers la machine cli ?
+\end{itemize}
+
+\vspace{0.3cm}
+
+Pour cette nouvelle étape, nous allons crée un tunnel SSH entre mon poste et srv à travers la machine cli. Pour ce faire, nous allons ouvrir un termnial et taper la commande ci-dessous : 
+
+\vspace{0.3cm}
+
+\begin{center}
+  \includegraphics[width=7cm]{Image-TD-SSH-5/port-local.png}
+\end{center}
+
+\vspace{0.3cm}
+
+Maintenant que nous avons crée notre tunnel ss, nous pouvons passer à la suite.
+
+\vspace{0.3cm}
+
+\begin{itemize}
+  \item Tester en ouvrant un navigateur sur votre poste local à l'adresse http://localhost:8000/cgi-bin/test1.cgi.
+\end{itemize}
+
+\vspace{0.3cm}
+
+\begin{itemize}
+  \item Pour srv , le navigateur devrait donc provenir de cli , et pas de votre poste local. \\
+  Si c'est OK, vous devriez avoir le message « OK : la connexion est bien établie depuis l’adresse de la VM cli »
+\end{itemize}
+
+\vspace{0.3cm}
+
+Ici, je vais repondre directement au deux question, maintenant nous allons tester la connexion en nous rendant à l'adresse suivante : http://localhost:8000/cgi-bin/test1.cgi. \\
+
+Voici ci-dessous, le résultat de la page : 
+
+\vspace{0.3cm}
+
+\begin{center}
+  \includegraphics[width=7cm]{Image-TD-SSH-5/Connexion-Cli.png}
+\end{center}
+
+\vspace{0.3cm}
+
+On peut constater que nous avons bien le message « OK : la connexion est bien établie depuis l’adresse de la VM cli ». Donc notre tunnel SSH fonctionne correctement.
+
+
 \end{document}
