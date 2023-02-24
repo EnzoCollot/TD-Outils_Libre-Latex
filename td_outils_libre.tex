@@ -963,4 +963,109 @@ Une fois que nous avons mis les informations dans le fichier de configuration, n
   \caption{Deux captures d'écran montrants une connexion en ssh au serveur srv avec l'utilisateur bob en utilisant l'auto-complétion}
 \end{figure}
 
+\vspace{0.3cm}
+
+\begin{itemize}
+  \item Vérifiez que vous arrivez à vous connecter au compte alice@cli en utilisant SFTP. \\ 
+  Copiez-y un fichier par SFTP, puis récupérez un autre fichier. ?
+\end{itemize}
+
+\vspace{0.3cm}
+
+Pour cette nouvelle étape, nous allons nous connecter avec l'utilisateur alice en utilisant SFTP. Pour ce faire, nous allons ouvrir un terminal et taper la commande suivante : 
+
+\texttt{sftp alice@10.0.0.2}
+
+\vspace{0.3cm}
+
+\begin{center}
+  \includegraphics[width=7cm]{Image-TD-SSH-4/commande-sftp.png}
+\end{center}
+
+\vspace{0.3cm}
+
+\begin{center}
+  \includegraphics[width=7cm]{Image-TD-SSH-4/connexion-sftp.png}
+\end{center}
+
+\vspace{0.3cm}
+
+On peut constater que nous somme bien connecter en sftp au serveur cli avec l'utilisateur Alice.
+
+\vspace{0.3cm}
+
+Maintenant que nous somme connecté, nous allons copier un fichier de notre machine local vers la machine virutel. Pour ce faire, nous allons crée un fichier texte et l'envoyer sur le serveur. Voici les étapes ci-dessous : 
+
+\vspace{0.3cm}
+
+Pour commencer, nous allons crée un fichier texte avec la commande suivante  : 
+
+\vspace{0.3cm}
+
+\begin{center}
+  \includegraphics[width=7cm]{Image-TD-SSH-4/création-fichier.png}
+\end{center}
+
+\vspace{0.3cm}
+
+Une fois que nous avons crée le fichier, on se reconnecte un serveur avec la commande que nous avons vue précédement. Une fois connecter, nous allons utiliser la commande suivante : 
+
+\vspace{0.3cm}
+
+\begin{center}
+  \includegraphics[width=7cm]{Image-TD-SSH-4/fichier-envoyer.png}
+\end{center}
+
+\vspace{0.3cm}
+
+\begin{center}
+  \includegraphics[width=7cm]{Image-TD-SSH-4/commande-reussite.png}
+\end{center}
+
+\vspace{0.3cm}
+
+On peut constater que notre fichier à bien était envoyé sur le serveur. 
+
+\vspace{0.3cm}
+
+Maintenant que nous avons envoyer un fichier de notre machine local vers la machine virtuelle, nous allons prendre un fichier de la machine virtuelle et nous allons le télécherger sur la machine local. Pour ce faire, nous allons utiliser la commande suivante : 
+
+\vspace{0.3cm}
+
+\begin{center}
+  \includegraphics[width=7cm]{Image-TD-SSH-4/commande-puts.png}
+\end{center}
+
+\vspace{0.3cm}
+
+\begin{center}
+  \includegraphics[width=7cm]{Image-TD-SSH-4/commande-puts-2.png}
+\end{center}
+
+\vspace{0.3cm}
+
+On peut constater que nous avons bien reçus le fichier du serveur sur notre machine local.
+
+\vspace{0.3cm}
+
+\begin{itemize}
+  \item Vérifiez que vous arrivez à vous connecter au compte alice@cli avec SSHFS. \\
+  Éditez un fichier distant avec un éditeur graphique (par exemple GVIM)
+\end{itemize}
+
+\vspace{0.3cm}
+
+Pour cette nouvelle étape, nous allons nous connecter au compte alice&cli avec SSHFS. Pour ce faire, nous allons utiliser la commande suivante : 
+
+\vspace{0.3cm}
+
+\begin{center}
+  \includegraphics[width=7cm]{Image-TD-SSH-4/commande-puts-2.png}
+\end{center}
+
+\vspace{0.3cm}
+
+
+
+
 \end{document}
