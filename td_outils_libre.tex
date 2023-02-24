@@ -1179,5 +1179,70 @@ Voici ci-dessous, le résultat de la page :
 
 On peut constater que nous avons bien le message « OK : la connexion est bien établie depuis l’adresse de la VM cli ». Donc notre tunnel SSH fonctionne correctement.
 
+\newpage
+
+\subsection{TD-5-SSH : Tunnel-Tsock}
+
+\vspace{0.3cm}
+
+\begin{itemize}
+  \item Se connecter en SSH sur srv .
+\end{itemize}
+
+\vspace{0.3cm}
+
+Pour cette nouvelle étape, nous allons nous connecter au serveur srv via SSH comme ci-dessous  : 
+
+\vspace{0.3cm}
+
+\begin{center}
+  \includegraphics[width=7cm]{Image-TD-SSH-6/connexion-ssh-srv.png}
+\end{center}
+
+\vspace{0.3cm}
+
+Maintenant que nous somme connecter au serveur srv, nous pouvons passer à la suite.
+
+\vspace{0.3cm}
+
+\begin{itemize}
+  \item Se connecter à cli en permettant à cli d’accéder à srv via un tunnel accessible par le port 9000.
+\end{itemize}
+
+\vspace{0.3cm}
+
+Pour ce connecter au serveur cli en permettant à cli d’accéder à srv via un tunnel accessible par le port 9000, nous allons crée un tunnel SSH comme ci-dessous : 
+
+\vspace{0.3cm}
+
+\begin{center}
+  \includegraphics[width=7cm]{Image-TD-SSH-6/tunnel-ssh.png}
+\end{center}
+
+\vspace{0.3cm}
+
+Maintenant que nous avons crée le tunnel SSH, nous allons passer à la suite. 
+
+\vspace{0.3cm}
+
+\begin{itemize}
+  \item Vérifier que vous arrivez à accéder au serveur web : wget -nv -O - http://localhost:9000/cgi-bin/test2.cgi.
+\end{itemize}
+
+\vspace{0.3cm}
+
+Pour verifier, nous allons utiliser la commande wget -nv -O - http://localhost:9000/cgi-bin/test2.cgi comme ci-dessous : 
+
+\vspace{0.3cm}
+
+\begin{center}
+  \includegraphics[width=7cm]{Image-TD-SSH-6/commande-wget.png}
+\end{center}
+
+\vspace{0.3cm}
+
+On peut constater que nous arrivons à accéder à la page web.
+
+\vspace{0.3cm}
 
 \end{document}
