@@ -1055,17 +1055,67 @@ On peut constater que nous avons bien reçus le fichier du serveur sur notre mac
 
 \vspace{0.3cm}
 
-Pour cette nouvelle étape, nous allons nous connecter au compte alice&cli avec SSHFS. Pour ce faire, nous allons utiliser la commande suivante : 
+\begin{itemize}
+    \item Vérifiez que la modification est bien répercutée sur la machine virtuelle alice@cli.
+\end{itemize}
+
+\vspace{0.3cm}
+
+Pour cette nouvelle étape, je vais répondre au deux question en même temps. Pour commencer, nous allons nous connecter au compte alice&cli avec SSHFS. Pour ce faire, nous allons utiliser la commande suivante : 
 
 \vspace{0.3cm}
 
 \begin{center}
-  \includegraphics[width=7cm]{Image-TD-SSH-4/commande-puts-2.png}
+  \includegraphics[width=7cm]{Image-TD-SSH-4/sshfs.png}
 \end{center}
 
 \vspace{0.3cm}
 
+Verfication du montage dans le dossier /tmp/alicli : 
+
+\vspace{0.3cm}
+
+\begin{center}
+  \includegraphics[width=7cm]{Image-TD-SSH-4/montage-sshfs.png}
+\end{center}
+
+\vspace{0.3cm}
+
+On peut constater que le montage à bien était réalisé. 
+
+\vspace{0.3cm}
+
+Maintenant, nous allons modifier un fichier avec vim et regarder si les modification se repercute quand on se connecte directement au serveur. Pour ce faire, nous allons créé un fichier avec vim et mettre des informations dedans comme ci-dessous  : 
+
+\vspace{0.3cm}
+
+\begin{center}
+  \includegraphics[width=7cm]{Image-TD-SSH-4/Modification-fichier-vim.png}
+\end{center}
+
+\vspace{0.3cm}
+
+Une fois que nous avons créé et modifié le fichier, nous allons nous connecter au serveur avec alice comme ci-dessous : 
+
+\vspace{0.3cm}
+
+\begin{center}
+  \includegraphics[width=7cm]{Image-TD-SSH-4/connexion-ssh.png}
+\end{center}
+
+\vspace{0.3cm}
+
+Une fois que nous somme connecter, nous allons regarder les information dans le fichier comme ci-dessous  : 
 
 
+\vspace{0.3cm}
+
+\begin{center}
+  \includegraphics[width=7cm]{Image-TD-SSH-4/verfication-fichier.png}
+\end{center}
+
+\vspace{0.3cm}
+
+On peut constater que notre fichier à bien était modifier.
 
 \end{document}
