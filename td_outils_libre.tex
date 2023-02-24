@@ -1402,5 +1402,145 @@ Maintenant que nous avons configuer ProxyCommand, nous allons nous connecter au 
 
 On peut constater que nous somme connecté au serveur srv en passant par le serveur cli. Donc le rebonds c'est bien effectué.
 
+\newpage
 
+\subsection{TD-9-SSH : Bonus SSH}
+
+\vspace{0.3cm}
+
+\begin{itemize}
+  \item Vérifiez que vous pouvez couper une connexion SSH en utilisant une séquence d’échappement.
+\end{itemize}
+
+\vspace{0.3cm}
+
+Pour cette nouvelle étape, nous allons verifier que l'on peut couper une connexion SSH en utilisant une séquence d’échappement. Pour ce faire, nous allons dans une fenêtre SSH et nous allons utiliser ce caractére d'échapement : 
+
+\vspace{0.3cm}
+
+\begin{center}
+  \includegraphics[width=7cm]{Image-TD-SSH-9/echappement.png}
+\end{center}
+
+\vspace{0.3cm}
+
+\begin{center}
+  \includegraphics[width=7cm]{Image-TD-SSH-9/fin-de-conection.png}
+\end{center}
+
+\vspace{0.3cm}
+
+On peut constater que nous avons reussie à mettre fin à la connexion SSH.
+
+\vspace{0.3cm}
+
+\begin{itemize}
+  \item Installez screen sur cli. \\
+  Connectez-vous-y \\
+  Lancez un screen , puis une commande dans un screen . - Déconnectez-vous
+  du screen et de cli . Vérifiez que vous pouvez vous reconnecter à cli et au
+  screen , et retrouver votre commande en cours d’exécution.
+\end{itemize}
+
+\vspace{0.3cm}
+
+Pour cette nouvelle étape, nous allons installer screen sur cli. Pour ce faire, nous connecter à cli et taper la commande ci-dessous : 
+
+\texttt{sudo apt-get install screen}
+
+\vspace{0.3cm}
+
+Maintenant que nous avons installer screen, nous allons le lancer et taper une commande comme ci-dessous  : 
+
+\vspace{0.3cm}
+
+\begin{center}
+  \includegraphics[width=7cm]{Image-TD-SSH-9/screen.png}
+\end{center}
+
+\vspace{0.3cm}
+
+\begin{center}
+  \includegraphics[width=7cm]{Image-TD-SSH-9/ping.png}
+\end{center}
+
+\vspace{0.3cm}
+
+Maintenant que nous avons une commande en cours d'éxécution, nous allons quitter la session avec la combinaison de touche ci-dessous : 
+
+\texttt{Ctrl + ad}
+
+\vspace{0.3cm}
+
+Une fois que nous avons quitter le terminal screen, nous allons y retourner avec la commande ci-dessous : 
+
+\vspace{0.3cm}
+
+\begin{center}
+  \includegraphics[width=7cm]{Image-TD-SSH-9/screen_r.png}
+\end{center}
+
+\vspace{0.3cm}
+
+\begin{center}
+  \includegraphics[width=7cm]{Image-TD-SSH-9/screen-return.png}
+\end{center}
+
+\vspace{0.3cm}
+
+On peut constater que nous avons retrouver notre terminal comme nous l'avons quitter.
+
+\vspace{0.3cm}
+
+\begin{itemize}
+  \item Idem avec tmux
+\end{itemize}
+
+\vspace{0.3cm}
+
+Pour cette nouvelle étape, nous allons installer tmux sur cli. Pour ce faire, nous connecter à cli et taper la commande ci-dessous : 
+
+\texttt{sudo apt-get install tmux}
+
+\vspace{0.3cm}
+
+Maintenant que nous avons installer tmux, nous allons le lancer et taper une commande comme ci-dessous  : 
+
+\vspace{0.3cm}
+
+\begin{center}
+  \includegraphics[width=7cm]{Image-TD-SSH-9/tmux.png}
+\end{center}
+
+\vspace{0.3cm}
+
+\begin{center}
+  \includegraphics[width=7cm]{Image-TD-SSH-9/ping-tmux.png}
+\end{center}
+
+\vspace{0.3cm}
+
+Maintenant que nous avons une commande en cours d'éxécution, nous allons quitter la session avec la combinaison de touche ci-dessous : 
+
+\texttt{Ctrl + bd}
+
+\vspace{0.3cm}
+
+Une fois que nous avons quitter le terminal screen, nous allons y retourner avec la commande ci-dessous : 
+
+\vspace{0.3cm}
+
+\begin{center}
+  \includegraphics[width=7cm]{Image-TD-SSH-9/tmux-attach.png}
+\end{center}
+
+\vspace{0.3cm}
+
+\begin{center}
+  \includegraphics[width=7cm]{Image-TD-SSH-9/return-tmux.png}
+\end{center}
+
+\vspace{0.3cm}
+
+On peut constater que nous avons retrouver notre terminal comme nous l'avons quitter.
 \end{document}
