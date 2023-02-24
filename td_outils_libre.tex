@@ -1312,4 +1312,95 @@ Nous allons lancer une application graphique via le terminal. Donc voici les ét
 
 Voila, nous avons reussi à lancer une application graphique X11 depuis le terminal.
 
+\newpage
+
+\subsection{TD-8-SSH : Rebonds SSH}
+
+\vspace{0.3cm}
+
+\begin{itemize}
+  \item Configurer .ssh/config avec ProxyJump de manière à pouvoir rebondir automatiquement sur cli lorsque vous vous connectez à srv.
+\end{itemize}
+
+\vspace{0.3cm}
+
+Dans cette nouvelle étape, nous allons configurer ProxyJump de manière à pouvoir rebondir automatiquement sur cli lorsque l'on se connecte à srv. Pour ce faire, nous allons crée et modifier le fichier config comme ci-dessous : 
+
+\vspace{0.3cm}
+
+\begin{center}
+  \includegraphics[width=7cm]{Image-TD-SSH-8/nano-config.png}
+\end{center}
+
+\vspace{0.3cm}
+
+\begin{center}
+  \includegraphics[width=7cm]{Image-TD-SSH-8/ProxyJump.png}
+\end{center}
+
+\vspace{0.3cm}
+
+Maintenant que nous avons configuer le fichier config, nous pouvons passer à la suite.
+
+\vspace{0.3cm}
+
+\begin{itemize}
+  \item Vous pouvez utiliser la commande who pour vérifier de quelle adresse vous connectez.
+\end{itemize}
+
+\vspace{0.3cm}
+
+Maintenant que nous avons configuer ProxyJump, nous allons nous connecter au serveur srv. Une fois connecter, nous allons utiliser la commande who ci-dessous : 
+
+\vspace{0.3cm}
+
+\begin{center}
+  \includegraphics[width=7cm]{Image-TD-SSH-8/commande-who.png}
+\end{center}
+
+\vspace{0.3cm}
+
+On peut constater que nous somme connecter au serveur srv en passant par le serveur cli. Donc le rebonds c'est bien effectué.
+
+\vspace{0.3cm}
+
+\begin{itemize}
+  \item Idem en utilisant ProxyCommand au lieu de ProxyJump.
+\end{itemize}
+
+\vspace{0.3cm}
+
+Pour cette nouvelle étape, nous allons utiliser ProxyCommand. Pour ce faire nous allons reprendre notre fichier config et le modifier comme ceci : 
+
+\vspace{0.3cm}
+
+\begin{center}
+  \includegraphics[width=7cm]{Image-TD-SSH-8/ProxyCommand.png}
+\end{center}
+
+\vspace{0.3cm}
+
+Maintenant que nous avons configuer le fichier config, nous pouvons passer à la suite.
+
+\vspace{0.3cm}
+
+\begin{itemize}
+  \item Vous pouvez utiliser la commande who pour vérifier de quelle adresse vous connectez.
+\end{itemize}
+
+\vspace{0.3cm}
+
+Maintenant que nous avons configuer ProxyCommand, nous allons nous connecter au serveur srv. Une fois connecter, nous allons utiliser la commande who ci-dessous : 
+
+\vspace{0.3cm}
+
+\begin{center}
+  \includegraphics[width=7cm]{Image-TD-SSH-8/commande-who-2.png}
+\end{center}
+
+\vspace{0.3cm}
+
+On peut constater que nous somme connecté au serveur srv en passant par le serveur cli. Donc le rebonds c'est bien effectué.
+
+
 \end{document}
