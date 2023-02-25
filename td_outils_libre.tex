@@ -1718,5 +1718,152 @@ Pour verifier que le commit est bien présent et correct, nous allons utiliser l
 
 On peut constater que notre commit est bien présent et correct.
 
+\newpage
+
+\subsection{TD-2-Git : Les branches}
+
+\vspace{0.3cm}
+
+\begin{itemize}
+  \item Créer une nouvelle branche.
+\end{itemize}
+
+\vspace{0.3cm}
+
+Dans cette nouvelle partie, nous allons créé une nouvelle branche. Pour ce faire, nous allons utiliser la commande suivante : 
+
+\texttt{git checkout -b "nom-de-la-branche"}
+
+\vspace{0.3cm}
+
+\begin{center}
+  \includegraphics[width=7cm]{Image-TD-Git-2/git-checkout.png}
+\end{center}
+
+\vspace{0.3cm}
+
+\begin{itemize}
+  \item Dans le Vagrantfile, ajouter l'utilisateur patrick.
+\end{itemize}
+
+\vspace{0.3cm}
+
+Pour cette nouvelle étapes, nous allons ajouter l'utilisateur patrick comme ci-dessous : 
+
+\vspace{0.3cm}
+
+\begin{center}
+  \includegraphics[width=7cm]{Image-TD-Git-2/ajout-patrick-vagrant.png}
+\end{center}
+
+\vspace{0.3cm}
+
+\begin{itemize}
+  \item Dans le Vagrantfile, installer php et l'activer sur apache.
+\end{itemize}
+
+\vspace{0.3cm}
+
+Pour cette nouvelle étapes, nous allons installer php et l'activer sur apache comme ci-dessous : 
+
+\vspace{0.3cm}
+
+\begin{center}
+  \includegraphics[width=7cm]{Image-TD-Git-2/php-apache.png}
+\end{center}
+
+\vspace{0.3cm}
+
+\begin{itemize}
+  \item Effectuer 2 commits distincts à l'aide de la commande git add -p.
+\end{itemize}
+
+\vspace{0.3cm}
+
+Pour cette nouvelle étapes, nous allons effectuer 2 commits distincts à l'aide de la commande git add -p. Voici les étapes ci-dessous : 
+
+\vspace{0.3cm}
+
+Pour commencer, nous allons taper la commande suivante : 
+
+\texttt{git add -p Vagrantfile}
+
+\vspace{0.3cm}
+
+Ensuite nous allons cliquer sur Y. 
+
+\vspace{0.3cm}
+
+\begin{center}
+  \includegraphics[width=7cm]{Image-TD-Git-2/git-add-1.png}
+\end{center}
+
+\vspace{0.3cm}
+
+Ensuite, nous allons faire un commits comme ci-dessous : 
+
+\vspace{0.3cm}
+
+\begin{center}
+  \includegraphics[width=7cm]{Image-TD-Git-2/premier-git-commit.png}
+\end{center}
+
+\vspace{0.3cm}
+
+Maintenant que nous avons fait le premier commit, nous allons effectuer le deuxième. Voici les étapes ci-dessous : 
+
+\vspace{0.3cm}
+
+Nous allons retaper la commande suivante : 
+
+\texttt{git add -p Vagrantfile}
+
+\vspace{0.3cm}
+
+Ensuite nous allons cliquer sur Y. 
+
+\vspace{0.3cm}
+
+
+\begin{center}
+  \includegraphics[width=7cm]{Image-TD-Git-2/git-add-2.png}
+\end{center}
+
+\vspace{0.3cm}
+
+Ensuite, nous allons faire un commits comme ci-dessous : 
+
+\vspace{0.3cm}
+
+\begin{center}
+  \includegraphics[width=7cm]{Image-TD-Git-2/deuxième-commit.png}
+\end{center}
+
+\vspace{0.3cm}
+
+Voila, nous avons effectuer 2 commits distincts.
+
+\vspace{0.3cm}
+
+\begin{itemize}
+  \item Revenir à la branche main , quel est l'état de votre working directory ?
+\end{itemize}
+
+\vspace{0.3cm}
+
+Pour revenir à la branche main ou master, il suffit de taper la commande suivante : 
+
+\texttt{git checkout main ou master}
+
+\vspace{0.3cm}
+
+\begin{center}
+  \includegraphics[width=7cm]{Image-TD-Git-2/git-checkout-master.png}
+\end{center}
+
+\vspace{0.3cm}
+
+On peut constater que dans notre working directory, nous avons plus les fichier Vagrants. Pour les revoir, il suffit juste de retoruner sur notre autre branche et de push vers master.
+
 
 \end{document}
