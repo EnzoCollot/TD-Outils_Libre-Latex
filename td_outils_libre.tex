@@ -1547,4 +1547,174 @@ Une fois que nous avons quitter le terminal screen, nous allons y retourner avec
 \vspace{0.3cm}
 
 On peut constater que nous avons retrouver notre terminal comme nous l'avons quitter.
+
+
+
+
+\newpage
+
+\section{Git}
+
+\subsection{TD-1-Git : Initialisation Git}
+
+\vspace{0.3cm}
+
+\begin{itemize}
+  \item Créer un nouveau répertoire et y initialiser un repository.
+\end{itemize}
+
+Pour cette nouvelle étape, nous allons créé un nouveaux répertoire et initialiser un repository. Pour ce faire, voici les étapes ci-dessous : 
+
+\vspace{0.3cm}
+
+\begin{figure}[h]
+  \centering
+  \begin{subfigure}{0.30\textwidth}
+    \centering
+    \includegraphics[width=\textwidth]{Image-TD-Git-1/new-directory.png}
+    \caption{Création d'un repertoire pour git}
+  \end{subfigure}
+  \vspace{0.9cm} % Espace verticale entre les images
+  \begin{subfigure}{0.45\textwidth}
+    \centering
+    \includegraphics[width=\textwidth]{Image-TD-Git-1/git-init.png}
+    \caption{Initialisation d'un repository}
+  \end{subfigure}
+  \caption{Deux capture d'ecran montrant comment initialiser un repository}
+\end{figure}
+
+\vspace{0.3cm}
+
+\begin{itemize}
+  \item Y copier la configuration Vagrant des TD ssh (Vagrantfile + dossier srv).
+\end{itemize}
+
+Maintenant que nous avons initialiser notre repository, nous allons copier les fichiers demander dans la questions. Voici la commande pour copier les fichiers : 
+
+\texttt{cp -r /chemin/Vagrantfile /chemin/td-git} \\
+\texttt{cp -r /chemin/srv /chemin/td-git}
+
+\vspace{0.3cm}
+
+Un fois que l'on à copier les bons documents au bonne endroits, nous pouvons passez à la question suivante. 
+
+\vspace{0.3cm}
+
+\begin{itemize}
+  \item Regarder les modifications détectées par git.
+\end{itemize}
+
+\vspace{0.3cm}
+
+Pour regarder les informations détectées par git, nous allons utiliser la commande suivante : 
+
+\texttt{git status}
+
+\vspace{0.3cm}
+
+\begin{center}
+  \includegraphics[width=7cm]{Image-TD-Git-1/git-status.png}
+\end{center}
+
+\vspace{0.3cm}
+
+\begin{itemize}
+  \item Démarrer puis arrêter la configuration Vagrant.
+\end{itemize}
+
+Pour démarrer puis arrêter la configuration Vagrant, nous allons utiliser ses deux commande ci-dessous : \newline
+
+Pour démarrer : 
+
+\texttt{vagrant up}
+
+Pour démarrer : 
+
+\texttt{vagrant halt}
+
+\vspace{0.3cm}
+
+\begin{itemize}
+  \item Regarder à nouveau les modifications détectées par git.
+\end{itemize}
+
+Pour cette nouvelle étapes, nous allons regarder de nouveaux les modification détectées par git. Voici ci-dessous, les modification détectées par git : 
+
+\vspace{0.3cm}
+
+\begin{center}
+  \includegraphics[width=7cm]{Image-TD-Git-1/git-status-2.png}
+\end{center}
+
+\vspace{0.3cm}
+
+\begin{itemize}
+  \item Que remarque-t-on ? Comment peut-on régler le problème ?
+\end{itemize}
+
+On peut constater que nous avons actuellement sur la branche master, des fichiers non suivie et qu'il n'y a pas eu de commit fait. \newline
+
+Pour régler le probléme, il suffit à d'ajouter les fichier et de faire un commit tout en ignorant le dossier .vagrant.
+
+\vspace{0.3cm}
+
+\begin{itemize}
+  \item Ajouter les fichiers Vagrant et commit les modifications.
+\end{itemize}
+
+Avant d'ajouter les fichiers Vagrant et commit les modifications, nous allons faire en sorte que git igonore le dossier .vagrant. \newline
+
+Pour ce faire, nous allons créé un fichier .gitignore et ajouter la ligne .vagrant comme ci-dessous : 
+
+\vspace{0.3cm}
+
+\begin{center}
+  \includegraphics[width=7cm]{Image-TD-Git-1/gitignore.png}
+\end{center}
+
+\vspace{0.3cm}
+
+Maintenant que nous avons ignorer le dossier .vagrant, nous allons ajouter les fichiers Vagrant et commit les modifications. Voici les étapes ci-dessous : 
+
+\vspace{0.3cm}
+
+\begin{center}
+  \includegraphics[width=7cm]{Image-TD-Git-1/git add.png}
+\end{center}
+
+Une fois que nous avons ajouter les fichiers Vagrant, nous allons crée un commit comme ci-dessous : 
+
+\vspace{0.3cm}
+
+\begin{center}
+  \includegraphics[width=7cm]{Image-TD-Git-1/git commit.png}
+\end{center}
+
+\vspace{0.3cm}
+
+Voila nous avons commit et ajouter les fichiers Vagrant.
+
+\vspace{0.3cm}
+
+\begin{itemize}
+  \item Vérifier que le commit est bien présent et correct.
+\end{itemize}
+
+\vspace{0.3cm}
+
+Pour verifier que le commit est bien présent et correct, nous allons utiliser la commande suivants : 
+
+\texttt{git log}
+
+\vspace{0.3cm}
+
+\begin{center}
+  \includegraphics[width=7cm]{Image-TD-Git-1/git-log.png}
+\end{center}
+
+\vspace{0.3cm}
+
+On peut constater que notre commit est bien présent et correct.
+
+
 \end{document}
