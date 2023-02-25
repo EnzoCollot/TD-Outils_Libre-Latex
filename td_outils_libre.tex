@@ -1922,4 +1922,144 @@ On peut constater que nous n'avons pas de sépicifités, juste que maintenant, l
 
 Oui la branche que nous avons créé existe toujours. On peut la garder pour des modification future dessus et ensuite, on pourra posser les modification sur la branche principale/
 
+\newpage
+
+\subsection{TD-4-Git : Les Conflits}
+
+\vspace{0.3cm}
+
+\begin{itemize}
+  \item Créer une nouvelle branche forward-new-port à partir de main.
+\end{itemize}
+
+\vspace{0.3cm}
+
+Pour commencer, nous allons créé une nouvelle branche sur main ou master. Pour ce faire, nous allons utiliser la commande suivante : 
+
+\texttt{git checkout -b forward-new-port}
+
+\vspace{0.3cm}
+
+\begin{center}
+  \includegraphics[width=7cm]{Image-TD-Git-4/git-checkout.png}
+\end{center}
+
+\vspace{0.3cm}
+
+\begin{itemize}
+  \item Sur forward-new-port : modifier le Vagrantfile pour forward le port 80 vers 8081 pour srv, puis commit.
+\end{itemize}
+
+\vspace{0.3cm}
+
+Pour cette nouvelle étape, nous allons modifier le Vagranfile comme l'indiquer dans la question : 
+
+\vspace{0.3cm}
+
+Modification du Vagrantfile : 
+
+\vspace{0.3cm}
+
+\begin{center}
+  \includegraphics[width=7cm]{Image-TD-Git-4/Forward-port.png}
+\end{center}
+
+\vspace{0.3cm}
+
+Une fois que nous avons modifier le Vagrantfile, on peut enregistrer et faire un commits comme ci-dessous : 
+
+\vspace{0.3cm}
+
+\begin{center}
+  \includegraphics[width=7cm]{Image-TD-Git-4/commit-1.png}
+\end{center}
+
+\vspace{0.3cm}
+
+\begin{itemize}
+  \item Sur main : modifier le Vagrantfile pour forward le port 80 vers 8080 pour srv, puis commit.
+\end{itemize}
+
+\vspace{0.3cm}
+
+Pour cette étape, nous allons effectuer les même modification sauf que nous allons les effectuers sur la branche master. Voici les étapes suiavntes : 
+
+\vspace{0.3cm}
+
+\vspace{0.3cm}
+
+Modification du Vagrantfile : 
+
+\vspace{0.3cm}
+
+\begin{center}
+  \includegraphics[width=7cm]{Image-TD-Git-4/Forward-port-2.png}
+\end{center}
+
+\vspace{0.3cm}
+
+Une fois que nous avons modifier le Vagrantfile, on peut enregistrer et faire un commits comme ci-dessous : 
+
+\vspace{0.3cm}
+
+\begin{center}
+  \includegraphics[width=7cm]{Image-TD-Git-4/commit-2.png}
+\end{center}
+
+\vspace{0.3cm}
+
+\begin{itemize}
+  \item Essayer de merger forward-new-port dans main.
+\end{itemize}
+
+Pour merger forward-new-port dans main, nous allons aller sur la branche main ou master et taper la commande suiavnte : 
+
+\texttt{git merge forward-new-port}
+
+\vspace{0.3cm}
+
+\begin{center}
+  \includegraphics[width=7cm]{Image-TD-Git-4/git-merge.png}
+\end{center}
+
+\vspace{0.3cm}
+
+\begin{center}
+  \includegraphics[width=7cm]{Image-TD-Git-4/Conflits.png}
+\end{center}
+
+\vspace{0.3cm}
+
+On peut constater que nous avons des conflits. Pour remédier à cela il suffit de faire les étapes suivantes : 
+
+\vspace{0.3cm}
+
+Pour commencer, nous allons faire un git add comme ci-dessous : 
+
+\vspace{0.3cm}
+
+\begin{center}
+  \includegraphics[width=7cm]{Image-TD-Git-4/git add.png}
+\end{center}
+
+\vspace{0.3cm}
+
+Une fois que nous avons fait un git add, nous allons faire un commit comme ci-dessous : 
+
+\vspace{0.3cm}
+
+\begin{center}
+  \includegraphics[width=7cm]{Image-TD-Git-4/git-commit-conflits.png}
+\end{center}
+
+\vspace{0.3cm}
+
+\begin{center}
+  \includegraphics[width=7cm]{Image-TD-Git-4/git-status.png}
+\end{center}
+
+\vspace{0.3cm}
+
+Et voila, nous avons réglée les problèmes de conflits.
+
 \end{document}
