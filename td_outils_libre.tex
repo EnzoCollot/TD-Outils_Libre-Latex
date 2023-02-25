@@ -1868,4 +1868,58 @@ Pour revenir à la branche main ou master, il suffit de taper la commande suivan
 On peut constater que dans notre working directory, nous avons plus les fichier Vagrants. Pour les revoir, il suffit juste de retoruner sur notre autre branche et de push vers master.
 
 
+\newpage
+
+\subsection{TD-3-Git : Réintégrer les changements}
+
+\vspace{0.3cm}
+
+\begin{itemize}
+  \item Intégrer les modification de code de l'exercice précédent dans main.
+\end{itemize}
+
+\vspace{0.3cm}
+
+Pour reintégrer les modification de code de l'exercice précédent dans main, nous allons utiliser la commande suivante : 
+
+\texttt{git merge nom-de-la-branche}
+
+\vspace{0.3cm}
+
+\begin{center}
+  \includegraphics[width=7cm]{Image-TD-Git-3/git-merge.png}
+\end{center}
+
+\vspace{0.3cm}
+
+\begin{itemize}
+  \item Inspecter le commit de merge, y'a t'il des specificités ?
+\end{itemize}
+
+\vspace{0.3cm}
+
+Pour intégrer le commit de merge, nous allons utiliser la commande suivant : 
+
+\texttt{git log --online}
+
+\vspace{0.3cm}
+
+\begin{center}
+  \includegraphics[width=7cm]{Image-TD-Git-3/git-log.png}
+\end{center}
+
+\vspace{0.3cm}
+
+On peut constater que nous n'avons pas de sépicifités, juste que maintenant, la branche ma-nouvelle-branche et attaché à la branche master.
+
+\vspace{0.3cm}
+
+\begin{itemize}
+  \item Est-ce que la branche que vous avez créé existe toujours ? Qu'est-ce qu'on en fait ?
+\end{itemize}
+
+\vspace{0.3cm}
+
+Oui la branche que nous avons créé existe toujours. On peut la garder pour des modification future dessus et ensuite, on pourra posser les modification sur la branche principale/
+
 \end{document}
