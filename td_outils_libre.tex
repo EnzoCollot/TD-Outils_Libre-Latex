@@ -2068,4 +2068,108 @@ Une fois que nous avons fait un git add, nous allons faire un commit comme ci-de
 
 Et voila, nous avons réglée les problèmes de conflits.
 
+\newpage
+
+\subsection{TD-5-Git : Github}
+
+\vspace{0.3cm}
+
+\begin{itemize}
+  \item Mettre en place une clé SSH sur GitHub pour éviter de taper son mot de passe à chaque push.
+\end{itemize}
+
+\vspace{0.3cm}
+
+Pour cette dernière partie, nous allons mettre en place une clé SSH sur GitHub pour éviter de taper son mot de passe à chaque push. \\
+
+Voici les étapes pour la mettre en place : 
+
+\vspace{0.3cm}
+
+Tout d'abord, vous allez sur votre compte github et vous aller dans les paramétre de votre compte comme ci-dessous : 
+
+\vspace{0.3cm}
+
+\begin{center}
+  \includegraphics[width=7cm]{Image-TD-Git-5/setting-github.png}
+\end{center}
+
+\vspace{0.3cm}
+
+Un fois que vous étes dans les paramétre, vous cliquer sur SSH and GPG keys comme ci-dessous : 
+
+\vspace{0.3cm}
+
+\begin{center}
+  \includegraphics[width=7cm]{Image-TD-Git-5/ssh-gpg.png}
+\end{center}
+
+Une fois que vous avez cliquer au bonne endroid, vous aller cliquer sur new key ssh : 
+
+\vspace{0.3cm}
+
+\begin{center}
+  \includegraphics[width=7cm]{Image-TD-Git-5/new-ssh-key.png}
+\end{center}
+
+\vspace{0.3cm}
+
+Ensuite, vous remplissez les champs en dessous en laissans par défault Key type. Ensuite cliquer sur Add SSH key.
+
+\vspace{0.3cm}
+
+\begin{center}
+  \includegraphics[width=7cm]{Image-TD-Git-5/ssh-key.png}
+\end{center}
+
+\vspace{0.3cm}
+
+\begin{center}
+  \includegraphics[width=7cm]{Image-TD-Git-5/clé-ajouter.png}
+\end{center}
+
+\vspace{0.3cm}
+
+Et voila, vous avez ajouter votre clé ssh à github.
+
+\vspace{0.3cm}
+
+\begin{itemize}
+  \item Reset son repository local à l'état après l'exercice #1.
+\end{itemize}
+
+\vspace{0.3cm}
+
+Dans cette étape, je vais remettre à l'état mon repository local aprés l'exercice #1. 
+
+Je ne vais pas vous montrer comme j'ai remit à l'état aprés l'exercice #1 mon repository local car cela n'a pas d'intérer.
+
+\vspace{0.3cm}
+
+\begin{itemize}
+  \item Refaire les exercices #2 et #3 en poussant sur GitHub pour chaque commit ou création de branche, utilisez les pull-request pour merge
+\end{itemize}
+
+\vspace{0.3cm}
+
+Pour cette dernière étapes, je ne vais pas vous remontrer aussi les exercice #2 et #3 car cela n'a pas d'intérer. \newline
+
+Mais pour chaque commit ou création de branche ou merge, au lieux de rester en local, j'ai tout push vers mon repository distant avec ses deux commandes suivante :
+
+\texttt{git remote add origin "le nom du repository distant crée sur github"}
+
+\texttt{git push origin master }
+
+\vspace{0.3cm}
+
+Voici le résultat de mon repository sur Github : 
+
+\vspace{0.3cm}
+
+\begin{center}
+  \includegraphics[width=7cm]{Image-TD-Git-5/clé-ajouter.png}
+\end{center}
+
+\vspace{0.3cm}
+
 \end{document}
