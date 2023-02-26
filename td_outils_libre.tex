@@ -94,15 +94,15 @@ footskip=15mm}
 
 \vspace{0.3cm}
 
-Pour désactiver la souris au niveau système, nous allons utiliser la commande \texttt{xinput}.
+Pour désactiver la souris au niveau système, nous utiliserons la commande \texttt{xinput}.
 
 \vspace{0.3cm}
 
-Je tiens à préciser que je vais effectuer ce test sur mon ordinateur personnel qui fonctionne sous Linux Mint.
+Je tiens à préciser que j'effectuerai ce test sur mon ordinateur personnel, qui fonctionne sous Linux Mint.
 
 \vspace{0.3cm}
 
-Voici ci-dessous, la commande qui permet de désactiver la souris :
+Voici ci-dessous la commande qui permet de désactiver la souris :
 
 \begin{verbatim}
 xinput set-prop "device name" "Device Enabled" 0
@@ -152,21 +152,25 @@ xinput set-prop "Logitech Wireless Receiver Mouse" "Device Enabled" 1
 
 \vspace{0.3cm}
 
-J'ai trouvé un site qui permet de tester la rapidité de frappe au clavier. Voici le lien ci-dessous  : 
+J'ai découvert un site qui permet de tester sa rapidité de frappe au clavier. Voici le lien ci-dessous :
 
 \href{https://www.taptouche.com/fr/test-de-vitesse}{Site de TapTouch}
 
 \vspace{0.3cm}
 
-Pourquoi celui-ci plutôt qu'un autre ?
+\begin{itemize}
+  \item Pourquoi celui-ci plutôt qu'un autre ?
+\end{itemize}
 
 \vspace{0.3cm}
 
-J'ai choisie ce site car il explique quelques informations sur notre score à la fin et il nous donne des astuces pour nous améliorer.
+J'ai choisi ce site car il explique quelques informations sur notre score à la fin et nous donne des astuces pour nous améliorer.
 
 \vspace{0.3cm}
 
-Inclure quelques screenshots montrant l'interface
+\begin{itemize}
+  \item Inclure quelques screenshots montrant l'interface
+\end{itemize}
 
 \vspace{0.3cm}
 
@@ -192,11 +196,16 @@ Screen de l'interface du site :
 
 \vspace{0.3cm}
 
-Essayer de masquer ses mains pour taper sans regarder
+\begin{itemize}
+  \item Essayer de masquer ses mains pour taper sans regarder
+\end{itemize}
 
 \vspace{0.3cm}
 
-Inclure quelques résultats de rapidité.
+\begin{itemize}
+  \item Inclure quelques résultats de rapidité.
+\end{itemize}
+
 
 \vspace{0.3cm}
 
@@ -232,7 +241,7 @@ Deuxième test effectué le 23/12/2022 :
 
 \vspace{0.3cm}
 
-Une fois que j'ai effectué les deux tutoriels, je vais paramétrer GNU Readline en mode Vim. Pour ce faire, je vais utiliser la commande suivante :
+Une fois que j'ai effectué les deux tutoriels, je vais paramétrer GNU Readline en mode Vim. Pour cela, je vais utiliser la commande suivante :
 
 \vspace{0.3cm}
 
@@ -240,7 +249,7 @@ Une fois que j'ai effectué les deux tutoriels, je vais paramétrer GNU Readline
 
 \vspace{0.3cm}
 
-Aprés, pour l'avoir de façon permanente, on peut ajouter cette ligne dans le fichier \texttt{~/.bashrc}.
+Après, pour l'avoir de façon permanente, on peut ajouter cette ligne dans le fichier \texttt{~/.bashrc}.
 
 \vspace{0.3cm}
 
@@ -250,7 +259,7 @@ Aprés, pour l'avoir de façon permanente, on peut ajouter cette ligne dans le f
 
 \vspace{0.3cm}
 
-J'ai testé ces deux modes et j'ai choisie d'utiliser Vim. 
+J'ai testé ces deux modes et j'ai choisi d'utiliser Vim.
 
 \vspace{0.3cm}
 
@@ -260,7 +269,7 @@ J'ai testé ces deux modes et j'ai choisie d'utiliser Vim.
 
 \vspace{0.3cm}
 
-Pour qu'il soit de façon permanente, j'ai ajouté cette ligne suivante dans le fichier bashrc comme ci-dessous :
+Pour qu'il soit permanent, j'ai ajouté la ligne suivante dans le fichier bashrc, comme ci-dessous :
 
 \vspace{0.3cm}
 
@@ -292,7 +301,7 @@ Voici ci-dessous, une capture d'écran de mon history :
 
 \vspace{0.3cm}
 
-Oui, il peut y avoir des informations sensibles dans le history comme les mot de passe etc. Pour remédier à cela, nous pouvons utiliser un autre interpréteur de commande comme ZSH.
+Oui, il peut y avoir des informations sensibles dans la commande history, telles que des mots de passe, etc. Pour remédier à cela, nous pouvons utiliser un autre interpréteur de commande, tel que ZSH.
 
 \vspace{0.3cm}
 
@@ -308,7 +317,7 @@ Oui, il peut y avoir des informations sensibles dans le history comme les mot de
 
 \vspace{0.3cm}
 
-On peut constater que cette employé à utiliser un autre interpréteur de commande qui est ZSH en le combinant avec OHMYZSH. Donc on ne peut plus voir son hisotry dans bash\_history.
+On peut constater que cet employé a utilisé un autre interpréteur de commande, qui est ZSH, en le combinant avec OHMYZSH. Par conséquent, on ne peut plus voir son historique dans bash_history.
 
 \vspace{0.3cm}
 
@@ -318,7 +327,7 @@ On peut constater que cette employé à utiliser un autre interpréteur de comma
 
 \vspace{0.3cm}
 
-Pour eviter d'avoir certaine commande dans notre hisotry, on peut ajouter l'option \texttt{HISTIGNORE} dans le fichier bashrc : 
+Pour éviter d'avoir certaines commandes dans notre historique, on peut ajouter l'option \texttt{HISTIGNORE} dans le fichier bashrc.
 
 \vspace{0.3cm}
 
@@ -358,11 +367,13 @@ Voici le resulat ci-dessous :
 
 \vspace{0.3cm}
 
-Ecrire une bash function mkcd mondossier qui crée le dossier mondosser puis navigue dedans. 
+\begin{itemize}
+  \item Écrire une fonction bash "mkcd" qui crée le dossier "mondossier" puis navigue dedans.
+\end{itemize}
 
 \vspace{0.3cm}
 
-Voici les étapes ci-dessous pour créer une bash function mkcd : 
+Voici ci-dessous les étapes pour créer une bash function nommée mkcd :
 
 \vspace{0.3cm}
 
@@ -372,11 +383,13 @@ Voici les étapes ci-dessous pour créer une bash function mkcd :
 
 \vspace{0.3cm}
 
-Ecrire une bash function gitemergency qui add, commit, et push tout son travail sur l'origine, permettant de ne rien perdre en cas d'alerte d'incendie.
+\begin{itemize}
+  \item Ecrire une bash function gitemergency qui add, commit, et push tout son travail sur l'origine, permettant de ne rien perdre en cas d'alerte d'incendie.
+\end{itemize}
 
 \vspace{0.3cm}
 
-Voici les étapes ci-dessous pour créer une bash function gitemergency : 
+Voici ci-dessous les étapes pour créer une bash function gitemergency :
 
 \vspace{0.3cm}
 
@@ -399,7 +412,7 @@ Voici les étapes ci-dessous pour créer une bash function gitemergency :
 
 \vspace{0.3cm}
 
-Pour répondre à la question, nous allons tout d'abord crée un script bash comme ci-dessous : 
+Pour répondre à la question, nous allons tout d'abord créer un script bash comme ci-dessous :
 
 \vspace{0.3cm}
 
@@ -409,7 +422,7 @@ Pour répondre à la question, nous allons tout d'abord crée un script bash com
 
 \vspace{0.3cm}
 
-Maintenant que nous avons crée le scrpite .sh, nous allons crée deux fonctions dans le fichier .zshrc pour faire fonctionner le script comme ci-dessous : 
+Maintenant que nous avons créé le script .sh, nous allons créer deux fonctions dans le fichier .zshrc pour faire fonctionner le script comme ci-dessous :
 
 \vspace{0.3cm}
 
@@ -419,7 +432,7 @@ Maintenant que nous avons crée le scrpite .sh, nous allons crée deux fonctions
 
 \vspace{0.3cm}
 
-Maintenant que nous avons crée les deux fonctions, nous allons les combinaison de touche dans le fichier .zshrc comme ci-dessous : 
+Maintenant que nous avons créé les deux fonctions, nous allons les combiner avec des touches dans le fichier .zshrc comme ci-dessous :
 
 \vspace{0.3cm}
 
@@ -429,7 +442,7 @@ Maintenant que nous avons crée les deux fonctions, nous allons les combinaison 
 
 \vspace{0.3cm}
 
-Il nous reste plus qu'à utiliser la commande \texttt{source ~/.zshrc} pour que les modification soient prises en comptes.
+Il ne nous reste plus qu'à utiliser la commande \texttt{source ~/.zshrc} pour que les modifications soient prises en compte.
 
 \newpage
 
@@ -443,7 +456,7 @@ Il nous reste plus qu'à utiliser la commande \texttt{source ~/.zshrc} pour que 
 
 \vspace{0.3cm}
 
-Pour ma part, je vais installer Terminator, Kitty et Tillix. Les installation des différantes terminaux sous debain en dessous :
+Pour ma part, je vais installer Terminator, Kitty et Tillix. Les installations des différents terminaux sous Debian sont ci-dessous :
 
 \vspace{0.3cm}
 
@@ -500,24 +513,19 @@ Image de Tilix :
 
 \vspace{0.3cm}
 
-J'ai décidé de chosire terminator car il offre beaucoup de possibilité.
-Au niveaux de la fonctionnalités, Terminator permet d'avoir plusieur terminaux dans un seul terminal (Multiplexage).
-On peut crée des onglets, de définir des reccourcie et bien plus encore.
+J'ai décidé de choisir Terminator car il offre beaucoup de possibilités. Au niveau des fonctionnalités, Terminator permet d'avoir plusieurs terminaux dans un seul terminal (multiplexage). On peut créer des onglets, définir des raccourcis et bien plus encore.
 
 \vspace{0.3cm}
 
-Ensuite, en ce qui concerne la rapidité, terminator est un terminal trés rapide et réactifs. 
+Ensuite, en ce qui concerne la rapidité, Terminator est un terminal très rapide et réactif.
 
 \vspace{0.3cm}
 
-Et pour finir, Terminator à une communauté trés actif et il est trés bien documenté. Donc on oeut conclure que dans l'ensemble, 
-Terminator est un bon choix de terminal en raison de ses fonctionnalités, de sa rapidté et de sa trés bonne documentation.
-C'est pour cela que j'ai décider d'utiliser Terminator. 
+Et pour finir, Terminator a une communauté très active et il est très bien documenté. Donc on peut conclure que dans l'ensemble, Terminator est un bon choix de terminal en raison de ses fonctionnalités, de sa rapidité et de sa très bonne documentation. C'est pour cela que j'ai décidé d'utiliser Terminator.
 
 \vspace{0.3cm}
 
-Et de mon point de vue, j'ai toujours utiliser terminator car je trouve qu'il est facile à utiliser et une fois que l'on connaits
-les différentes combinaisons de touche, il peut devenir trés puissant.
+Et de mon point de vue, j'ai toujours utilisé Terminator car je trouve qu'il est facile à utiliser et une fois que l'on connaît les différentes combinaisons de touches, il peut devenir très puissant.
 
 \vspace{0.3cm}
 
@@ -527,7 +535,7 @@ les différentes combinaisons de touche, il peut devenir trés puissant.
 
 \vspace{0.3cm}
 
-Pour désinstaller les autre terminaux, nous allons utiliser la commande suivante : 
+Pour désinstaller les autres terminaux, nous allons utiliser la commande suivante : 
 
 \vspace{0.3cm}
 
