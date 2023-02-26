@@ -556,7 +556,7 @@ sudo apt-get remove (le nom de terminal). Par exemple : sudo apt-get remove tili
 
 \vspace{0.3cm}
 
-Pour ce nouveau TD, nous allons utiliser Vagrant pour utiliser SSH. Pour ce faire, nous allons télécharger depuis Arche le fichier Vagrant. Une fois que le fichier Vagrant est téléchargé, nous allons exécuter la machine Vagrant avec la commande ci-dessous :
+Pour ce nouveau TD, nous allons utiliser Vagrant afin d'utiliser SSH. Pour cela, nous allons télécharger depuis Arche le fichier Vagrant. Une fois que celui-ci est téléchargé, nous pourrons exécuter la machine Vagrant en utilisant la commande ci-dessous :
 
 \vspace{0.3cm}
 
@@ -566,7 +566,7 @@ Pour ce nouveau TD, nous allons utiliser Vagrant pour utiliser SSH. Pour ce fair
 
 \vspace{0.3cm}
 
-Une fois que la commande est terminer, on doit avoir ceci comment message qui indique que les machine sont bien démarrer : 
+Une fois que la commande est terminée, on doit avoir ceci comme message qui indique que les machines sont bien démarrées :  
 
 \vspace{0.3cm}
 
@@ -582,11 +582,11 @@ Une fois que la commande est terminer, on doit avoir ceci comment message qui in
 
 \vspace{0.3cm}
 
-Pour se connecter à la machine srv avec les utilisateurs alice, bob et carole sans utiliser vagrant ssh, nous allons utiliser la commande suivante : 
+Pour se connecter à la machine srv avec les utilisateurs Alice, Bob et Carole sans utiliser "vagrant ssh", nous allons utiliser la commande suivante :
 
 \vspace{0.3cm}
 
-Connexion à l'utilisateur alice en ssh  : 
+Connexion à l'utilisatrice alice en ssh  : 
 
 \vspace{0.3cm}
 
@@ -608,7 +608,7 @@ Connexion à l'utilisateur alice en ssh  :
 
 \vspace{0.3cm}
 
-Maintenant que nous avons réussi à nous connecter au serveur "srv" avec l'utilisateur "Alice", nous allons faire la même chose pour les deux autres utilisateurs.
+Maintenant que nous nous sommes connectés au serveur 'srv' en utilisant le compte d'utilisateur 'Alice', nous allons répéter la même procédure pour les deux autres utilisateurs."
 
 \vspace{0.3cm}
 
@@ -670,7 +670,7 @@ Connexion à l'utilisateur carol en ssh  :
 
 \vspace{0.3cm}
 
-Pour verifier que nous somme bien sur la machine vagrant et non en local, nous allons utiliser la commande suivante : 
+Pour vérifier que nous sommes bien sur la machine Vagrant et non en local, nous allons utiliser la commande suivante :
 
 \vspace{0.3cm}
 
@@ -690,7 +690,7 @@ On peut constater qu'au niveau des adresses IP, nous avons celle du serveur "srv
 
 \vspace{0.3cm}
 
-Voici, ci-dessous l'history local : 
+Ci-dessous se trouve l'history local : 
 
 \vspace{0.3cm}
 
@@ -700,7 +700,7 @@ Voici, ci-dessous l'history local :
 
 \vspace{0.3cm}
 
-On peut constater que nous ne voyons pas les mots de passe que nous avons entrés pour nous connecter au serveur srv avec un utilisateur.
+On peut constater que nous ne voyons pas les mots de passe que nous avons saisis pour nous connecter au serveur srv avec un utilisateur.
 
 
 \subsection{TD-2-SSH : Authentification Publique}
@@ -711,11 +711,11 @@ On peut constater que nous ne voyons pas les mots de passe que nous avons entré
   \item Créer une paire de clés privée et publique à l'aide de ssh-keygen ?
 \end{itemize}
 
-Pour cette nouvelle étape, nous allons créer une paire de clés privée et publique à l'aide de ssh-keygen. Donc voici les étape ci-dessous pour le faire : 
+Pour cette nouvelle étape, nous allons créer une paire de clés privée et publique à l'aide de ssh-keygen. Voici donc les étapes ci-dessous pour le faire :
 
 \vspace{0.3cm}
 
-Pour commencer, nous allons ouvrie un terminal est taper la commande suivante  : 
+Pour commencer, nous allons ouvrir un terminal et taper la commande suivante :
 
 \vspace{0.3cm}
 
@@ -725,7 +725,7 @@ Pour commencer, nous allons ouvrie un terminal est taper la commande suivante  :
 
 \vspace{0.3cm}
 
-Ensuite, il nous demande à quel emplacement nous voulons enregistrer notre clé. Nous laissons par défaut :
+Ensuite, il nous demande à quel emplacement nous voulons enregistrer notre clé. Nous laissons par défaut.
 
 \vspace{0.3cm}
 
@@ -738,7 +738,7 @@ Ensuite, il nous demande à quel emplacement nous voulons enregistrer notre clé
 \newpage
 
 
-Ensuite, il nous demande une passphrase. Vous pouvez en indiquer une, mais j'ai laissé par défaut. Une fois que c'est fini, vous devez avoir cela qui devrait apparaître :
+Ensuite, il nous demande une phrase secrète (ou "passphrase" en anglais). Vous pouvez en indiquer une, mais j'ai laissé celle par défaut. Une fois que c'est terminé, cela devrait apparaître :
 
 \vspace{0.3cm}
 
@@ -748,7 +748,7 @@ Ensuite, il nous demande une passphrase. Vous pouvez en indiquer une, mais j'ai 
 
 \vspace{0.3cm}
 
-Voila, nous avons générer une clé rsa.
+Voilà, nous avons généré une clé RSA.
 
 \vspace{0.3cm}
 
@@ -758,7 +758,7 @@ Voila, nous avons générer une clé rsa.
 
 \vspace{0.3cm}
 
-Pour cette nouvelle étape, nous allons utiliser la commande ssh-copy-id pour déposer la clé publique sur le compte alice@cli. Pour ce faire, nous allons utiliser la commande suivantes : 
+Pour cette nouvelle étape, nous allons utiliser la commande ssh-copy-id pour déposer la clé publique sur le compte alice@cli. Pour ce faire, nous allons utiliser la commande suivante :
 
 \vspace{0.3cm}
 
@@ -768,7 +768,7 @@ Pour cette nouvelle étape, nous allons utiliser la commande ssh-copy-id pour d�
 
 \vspace{0.3cm}
 
-Une fois que nous avons entrée la commande, il va nous demander le mot de passe de Alice. Une fois le mots de passe entrer, nous avons ceci qui apparaît : 
+Une fois que nous avons entré la commande, il va nous demander le mot de passe d'Alice. Une fois le mot de passe entré, voici ce qui apparaît :
 
 \vspace{0.3cm}
 
@@ -778,7 +778,7 @@ Une fois que nous avons entrée la commande, il va nous demander le mot de passe
 
 \vspace{0.3cm}
 
-Maintenant, on peut ce connecter en compte d'alice sur le serveur cli sans rentrer son mots de passe.
+Maintenant, on peut se connecter au compte d'Alice sur le serveur CLI sans entrer son mot de passe.
 
 \vspace{0.3cm}
 
@@ -790,11 +790,11 @@ Maintenant, on peut ce connecter en compte d'alice sur le serveur cli sans rentr
 
 \vspace{0.3cm}
 
-Pour déposer manuellement la clé publique sur le compte bob@cli, vous pouvez suivre les étapes ci-dessous : 
+"Pour déposer manuellement la clé publique sur le compte bob@cli, vous pouvez suivre les étapes ci-dessous :
 
 \vspace{0.3cm}
 
-Pour commencer, nous allons afficher le contenue de notre clé publique et le copier avec la commande suivante : 
+Pour commencer, nous allons afficher le contenu de notre clé publique et le copier avec la commande suivante :
 
 \vspace{0.3cm}
 
@@ -806,25 +806,25 @@ Pour commencer, nous allons afficher le contenue de notre clé publique et le co
 
 \newpage
 
-Une fois que nous avons copier la clé publique, nous allons nous connecter au compte de bob@cli avec la commande suivante : \\
+Une fois que nous avons copié la clé publique, nous allons nous connecter au compte de Bob@cli avec la commande suivante : \\
 
 \texttt{ssh bob@cli}
 
 \vspace{0.3cm}
 
-Une fois connecter sur le compte, nous allons verifier si le dossier .ssh existe. Si il existe pas, nous le créons avec la commande suivante : \\
+Une fois connecté sur le compte, nous allons vérifier si le dossier .ssh existe. S'il n'existe pas, nous le créons avec la commande suivante : \\
 
 \texttt{mkdir ~/.ssh}
 
 \vspace{0.3cm}
 
-Ensuite, on tape la commande suivante pour créer ou ouvrir le fichier "authorized\_keys" : \\
+Ensuite, on tape la commande suivante pour créer ou ouvrir le fichier "authorized_keys" : \\
 
 \texttt{nano ~/.ssh/authorized\_keys}
 
 \vspace{0.3cm}
 
-Maintenant, on copie le contenue de la clé publique dans le fichier comme ci-dessous  : 
+Maintenant, on copie le contenu de la clé publique dans le fichier comme ci-dessous :
 
 \vspace{0.3cm}
 
@@ -834,7 +834,7 @@ Maintenant, on copie le contenue de la clé publique dans le fichier comme ci-de
 
 \vspace{0.3cm}
 
-Une fois que nous avons enregistrer le fichier, c'est bon, on peut ce connecter au compte de bob@cli sans taper le mot de passe avec la commande suivante : \\  
+Une fois que nous avons enregistré le fichier, c'est bon, on peut se connecter au compte de bob@cli sans taper le mot de passe avec la commande suivante : \\  
 
 \texttt{ssh -i ~/.ssh/id\_rsa.pub bob@cli}
 
@@ -864,7 +864,7 @@ Voici les étapes pour ajouter manuellement la clé publique du serveur srv au f
 
 \vspace{0.3cm}
 
-Tout d'abord, on va utiliser la commande ssh-keyscan pour récupérer la clé publique du serveur srv. Dans un terminal, on va utiliser la commande suivante : 
+Tout d'abord, on va utiliser la commande "ssh-keyscan" pour récupérer la clé publique du serveur "srv". Dans un terminal, on va utiliser la commande suivante :
 
 \texttt{ssh-keyscan 10.0.0.3 >> ~/.ssh/known\_hosts}
 
@@ -884,7 +884,7 @@ Tout d'abord, on va utiliser la commande ssh-keyscan pour récupérer la clé pu
 
 \newpage
 
-Ensuite, on va utiliser la commande ssh-keygen pour générer une paire de clés SSH (une clé publique et une clé privée) sur l'ordinateur local. Dans le même terminal, tapez la commande suivante :
+Ensuite, on va utiliser la commande ssh-keygen pour générer une paire de clés SSH (une clé publique et une clé privée) sur l'ordinateur local. Dans le même terminal, tapez la commande suivante:
 
 \texttt{ssh-keygen}
 
@@ -897,13 +897,13 @@ Ensuite, on va utiliser la commande ssh-keygen pour générer une paire de clés
 
 \vspace{0.3cm}
 
-Une fois que nous avons généré une paire de clés SSH, nous allons  copier la clé publique sur le serveur srv. Pour ce faire, nous allons entrer la commande suivante dans le terminal :
+Une fois que nous avons généré une paire de clés SSH, nous allons copier la clé publique sur le serveur srv. Pour ce faire, nous allons entrer la commande suivante dans le terminal :
 
 \texttt{ssh-copy-id -i ~/.ssh/id/\_rsa.pub user@srv} 
 
 \vspace{0.3cm}
 
-Ici, user@srv on remplace par les utilisateur sur le serveur srv. un petit exemple ci-dessous  : 
+"Ici, user@srv on remplace par les utilisateur sur le serveur srv. Un petit exemple ci-dessous :
 
 \vspace{0.3cm}
 
@@ -913,7 +913,7 @@ Ici, user@srv on remplace par les utilisateur sur le serveur srv. un petit exemp
 
 \vspace{0.3cm}
 
-Voila, maintenant, on peut se connecter automatique avec l'utilisateur bob au serveur srv.
+Voilà, maintenant, on peut se connecter automatiquement avec l'utilisateur Bob au serveur srv.
 
 \vspace{0.3cm}
 
@@ -923,11 +923,11 @@ Voila, maintenant, on peut se connecter automatique avec l'utilisateur bob au se
 
 \vspace{0.3cm}
 
-Voici les étapes pour créer un fichier de configuration pour SSH qui permettra de se connecter au compte bob@cli en tapant simplement ssh bc :
+Voici les étapes pour créer un fichier de configuration pour SSH qui permettra de se connecter au compte 'bob@cli' en tapant simplement 'ssh bc'."
 
 \vspace{0.3cm}
 
-Pour commencer, nous allons tapez la commande suivante pour créer un nouveau fichier de configuration SSH :
+Pour commencer, nous allons taper la commande suivante pour créer un nouveau fichier de configuration SSH :
 
 \texttt{nano ~/.ssh/config}
 
@@ -951,7 +951,7 @@ Dans le fichier de configuration, ajoutez les lignes suivantes :
 
 \newpage
 
-Une fois que nous avons mis les informations dans le fichier de configuration, nous pouvons nous connecter comme ci-dessous : 
+Une fois que nous avons mis les informations dans le fichier de configuration, nous pouvons nous connecter en utilisant les identifiants indiqués ci-dessous :
 
 \vspace{0.3cm}
 
@@ -982,7 +982,7 @@ Une fois que nous avons mis les informations dans le fichier de configuration, n
 
 \vspace{0.3cm}
 
-Pour cette nouvelle étape, nous allons nous connecter avec l'utilisateur alice en utilisant SFTP. Pour ce faire, nous allons ouvrir un terminal et taper la commande suivante : 
+Pour cette nouvelle étape, nous allons nous connecter à l'utilisateur Alice en utilisant SFTP. Pour cela, nous allons ouvrir un terminal et taper la commande suivante :
 
 \texttt{sftp alice@10.0.0.2}
 
@@ -1000,15 +1000,15 @@ Pour cette nouvelle étape, nous allons nous connecter avec l'utilisateur alice 
 
 \vspace{0.3cm}
 
-On peut constater que nous somme bien connecter en sftp au serveur cli avec l'utilisateur Alice.
+On peut constater que nous sommes bien connectés en SFTP au serveur CLI avec l'utilisateur Alice.
 
 \vspace{0.3cm}
 
-Maintenant que nous somme connecté, nous allons copier un fichier de notre machine local vers la machine virutel. Pour ce faire, nous allons crée un fichier texte et l'envoyer sur le serveur. Voici les étapes ci-dessous : 
+Maintenant que nous sommes connectés, nous allons copier un fichier depuis notre machine locale vers la machine virtuelle. Pour cela, nous allons créer un fichier texte et l'envoyer sur le serveur. Voici les étapes ci-dessous :
 
 \vspace{0.3cm}
 
-Pour commencer, nous allons crée un fichier texte avec la commande suivante  : 
+Pour commencer, nous allons créer un fichier texte avec la commande suivante :
 
 \vspace{0.3cm}
 
@@ -1022,7 +1022,7 @@ Pour commencer, nous allons crée un fichier texte avec la commande suivante  :
 
 \vspace{0.3cm}
 
-Une fois que nous avons crée le fichier, on se reconnecte au serveur avec la commande que nous avons vue précédement. Une fois connecter, nous allons utiliser la commande suivante : 
+Une fois que nous avons créé le fichier, on se reconnecte au serveur avec la commande que nous avons vue précédemment. Une fois connectés, nous allons utiliser la commande suivante :
 
 \vspace{0.3cm}
 
@@ -1038,11 +1038,11 @@ Une fois que nous avons crée le fichier, on se reconnecte au serveur avec la co
 
 \vspace{0.3cm}
 
-On peut constater que notre fichier à bien était envoyé sur le serveur. 
+On peut constater que notre fichier a bien été envoyé sur le serveur.
 
 \vspace{0.3cm}
 
-Maintenant que nous avons envoyer un fichier de notre machine local vers la machine virtuelle, nous allons prendre un fichier de la machine virtuelle et nous allons le télécherger sur la machine local. Pour ce faire, nous allons utiliser la commande suivante : 
+Maintenant que nous avons envoyé un fichier de notre machine locale vers la machine virtuelle, nous allons prendre un fichier de la machine virtuelle et le télécharger sur la machine locale. Pour ce faire, nous allons utiliser la commande suivante :
 
 \vspace{0.3cm}
 
@@ -1058,7 +1058,7 @@ Maintenant que nous avons envoyer un fichier de notre machine local vers la mach
 
 \vspace{0.3cm}
 
-On peut constater que nous avons bien reçus le fichier du serveur sur notre machine local.
+On peut constater que nous avons bien reçu le fichier du serveur sur notre machine locale.
 
 \vspace{0.3cm}
 
@@ -1075,7 +1075,7 @@ On peut constater que nous avons bien reçus le fichier du serveur sur notre mac
 
 \vspace{0.3cm}
 
-Pour cette nouvelle étape, je vais répondre au deux question en même temps. Pour commencer, nous allons nous connecter au compte alice@cli avec SSHFS. Pour ce faire, nous allons utiliser la commande suivante : 
+Pour cette nouvelle étape, je vais répondre aux deux questions en même temps. Pour commencer, nous allons nous connecter au compte alice@cli avec SSHFS. Pour ce faire, nous allons utiliser la commande suivante :
 
 \vspace{0.3cm}
 
@@ -1085,7 +1085,7 @@ Pour cette nouvelle étape, je vais répondre au deux question en même temps. P
 
 \vspace{0.3cm}
 
-Verfication du montage dans le dossier /tmp/alicecli : 
+Vérification du montage dans le dossier /tmp/alicecli :
 
 \vspace{0.3cm}
 
@@ -1095,13 +1095,13 @@ Verfication du montage dans le dossier /tmp/alicecli :
 
 \vspace{0.3cm}
 
-On peut constater que le montage à bien était réalisé. 
+On peut constater que le montage a bien été réalisé.
 
 \newpage
 
 \vspace{0.3cm}
 
-Maintenant, nous allons modifier un fichier avec vim et regarder si les modification se repercute quand on se connecte directement au serveur. Pour ce faire, nous allons créé un fichier avec vim et mettre des informations dedans comme ci-dessous  : 
+Maintenant, nous allons modifier un fichier avec Vim et regarder si les modifications se répercutent quand on se connecte directement au serveur. Pour ce faire, nous allons créer un fichier avec Vim et y mettre des informations comme ci-dessous :
 
 \vspace{0.3cm}
 
@@ -1111,7 +1111,7 @@ Maintenant, nous allons modifier un fichier avec vim et regarder si les modifica
 
 \vspace{0.3cm}
 
-Une fois que nous avons créé et modifié le fichier, nous allons nous connecter au serveur avec alice comme ci-dessous : 
+Une fois que nous avons créé et modifié le fichier, nous allons nous connecter au serveur avec Alice comme ci-dessous :
 
 \vspace{0.3cm}
 
@@ -1121,8 +1121,7 @@ Une fois que nous avons créé et modifié le fichier, nous allons nous connecte
 
 \vspace{0.3cm}
 
-Une fois que nous somme connecter, nous allons regarder les information dans le fichier comme ci-dessous  : 
-
+Une fois que nous sommes connectés, nous allons regarder les informations dans le fichier comme ci-dessous :
 
 \vspace{0.3cm}
 
@@ -1132,7 +1131,7 @@ Une fois que nous somme connecter, nous allons regarder les information dans le 
 
 \vspace{0.3cm}
 
-On peut constater que notre fichier à bien était modifier.
+On peut constater que notre fichier a bien été modifié.
 
 \newpage
 
@@ -1146,7 +1145,7 @@ On peut constater que notre fichier à bien était modifier.
 
 \vspace{0.3cm}
 
-Pour cette nouvelle étape, nous allons crée un tunnel SSH entre mon poste et srv à travers la machine cli. Pour ce faire, nous allons ouvrir un termnial et taper la commande ci-dessous : 
+Pour cette nouvelle étape, nous allons créer un tunnel SSH entre mon poste et le serveur à travers la machine cli. Pour ce faire, nous allons ouvrir un terminal et taper la commande ci-dessous :
 
 \vspace{0.3cm}
 
@@ -1156,7 +1155,7 @@ Pour cette nouvelle étape, nous allons crée un tunnel SSH entre mon poste et s
 
 \vspace{0.3cm}
 
-Maintenant que nous avons crée notre tunnel ss, nous pouvons passer à la suite.
+"Maintenant que nous avons créé notre tunnel SSH, nous pouvons passer à la suite.
 
 \vspace{0.3cm}
 
@@ -1173,9 +1172,9 @@ Maintenant que nous avons crée notre tunnel ss, nous pouvons passer à la suite
 
 \vspace{0.3cm}
 
-Ici, je vais repondre directement au deux question, maintenant nous allons tester la connexion en nous rendant à l'adresse suivante : http://localhost:8000/cgi-bin/test1.cgi. \\
+Ici, je vais répondre directement aux deux questions. Maintenant, nous allons tester la connexion en nous rendant à l'adresse suivante : http://localhost:8000/cgi-bin/test1.cgi. \\
 
-Voici ci-dessous, le résultat de la page : 
+Voici ci-dessous le résultat de la page :
 
 \vspace{0.3cm}
 
@@ -1185,7 +1184,7 @@ Voici ci-dessous, le résultat de la page :
 
 \vspace{0.3cm}
 
-On peut constater que nous avons bien le message « OK : la connexion est bien établie depuis l’adresse de la VM cli ». Donc notre tunnel SSH fonctionne correctement.
+On peut constater que nous avons bien reçu le message « OK : la connexion est bien établie depuis l’adresse de la VM cli ». Donc, notre tunnel SSH fonctionne correctement.
 
 \newpage
 
@@ -1199,7 +1198,7 @@ On peut constater que nous avons bien le message « OK : la connexion est bien �
 
 \vspace{0.3cm}
 
-Pour cette nouvelle étape, nous allons nous connecter au serveur srv via SSH comme ci-dessous  : 
+Pour cette nouvelle étape, nous allons nous connecter au serveur "srv" via SSH, comme ci-dessous :
 
 \vspace{0.3cm}
 
@@ -1209,7 +1208,7 @@ Pour cette nouvelle étape, nous allons nous connecter au serveur srv via SSH co
 
 \vspace{0.3cm}
 
-Maintenant que nous somme connecter au serveur srv, nous pouvons passer à la suite.
+Maintenant que nous sommes connectés au serveur srv, nous pouvons passer à la suite.
 
 \vspace{0.3cm}
 
@@ -1219,7 +1218,7 @@ Maintenant que nous somme connecter au serveur srv, nous pouvons passer à la su
 
 \vspace{0.3cm}
 
-Pour ce connecter au serveur cli en permettant à cli d’accéder à srv via un tunnel accessible par le port 9000, nous allons crée un tunnel SSH comme ci-dessous : 
+Pour se connecter au serveur en permettant à CLI d'accéder à SRV via un tunnel accessible par le port 9000, nous allons créer un tunnel SSH comme ci-dessous :
 
 \vspace{0.3cm}
 
@@ -1229,7 +1228,7 @@ Pour ce connecter au serveur cli en permettant à cli d’accéder à srv via un
 
 \vspace{0.3cm}
 
-Maintenant que nous avons crée le tunnel SSH, nous allons passer à la suite. 
+Maintenant que nous avons créé le tunnel SSH, nous allons passer à la suite.
 
 \vspace{0.3cm}
 
@@ -1239,7 +1238,7 @@ Maintenant que nous avons crée le tunnel SSH, nous allons passer à la suite.
 
 \vspace{0.3cm}
 
-Pour verifier, nous allons utiliser la commande wget -nv -O - http://localhost:9000/cgi-bin/test2.cgi comme ci-dessous : 
+Pour vérifier, nous allons utiliser la commande wget -nv -O - http://localhost:9000/cgi-bin/test2.cgi comme ci-dessous :
 
 \vspace{0.3cm}
 
@@ -1249,7 +1248,7 @@ Pour verifier, nous allons utiliser la commande wget -nv -O - http://localhost:9
 
 \vspace{0.3cm}
 
-On peut constater que nous arrivons à accéder à la page web.
+On peut constater que nous parvenons à accéder à la page web.
 
 \vspace{0.3cm}
 
@@ -1265,14 +1264,14 @@ On peut constater que nous arrivons à accéder à la page web.
 
 \vspace{0.3cm}
 
-Pour cette nouvelle étape, nous allons une application graphique sur le serveur cli. Pour ce faire, nous allons nous connecter sur le serveur cli et installer les application suivante : 
+Pour cette nouvelle étape, nous allons utiliser une application graphique sur le serveur CLI. Pour ce faire, nous allons nous connecter au serveur CLI et installer les applications suivantes :
 
 \texttt{sudo apt-get install x11-apps} \\
 \texttt{sudo apt-get install xauth}
 
 \vspace{0.3cm}
 
-Maintenant que nous avons installer ces deux paquets, nous pouvons passé à la suite.
+Maintenant que nous avons installé ces deux paquets, nous pouvons passer à la suite.
 
 \vspace{0.3cm}
 
@@ -1282,7 +1281,7 @@ Maintenant que nous avons installer ces deux paquets, nous pouvons passé à la 
 
 \vspace{0.3cm}
 
-Pour ce connecter sur cli en activant le forwarding X11, nous allons utiliser la commande ci-dessous : 
+Pour se connecter sur CLI en activant le forwarding X11, nous allons utiliser la commande ci-dessous :
 
 \vspace{0.3cm}
 
@@ -1292,7 +1291,7 @@ Pour ce connecter sur cli en activant le forwarding X11, nous allons utiliser la
 
 \vspace{0.3cm}
 
-Une fois que nous somme connecter, nous pouvons passer à la suite. 
+Une fois que nous sommes connectés, nous pouvons passer à la suite.
 
 \vspace{0.3cm}
 
@@ -1302,7 +1301,7 @@ Une fois que nous somme connecter, nous pouvons passer à la suite.
 
 \vspace{0.3cm}
 
-Nous allons lancer une application graphique via le terminal. Donc voici les étapes pour lancer l'application graphique : 
+Nous allons lancer une application graphique via le terminal. Voici donc les étapes pour lancer l'application graphique :
 
 \vspace{0.3cm}
 
@@ -1318,7 +1317,7 @@ Nous allons lancer une application graphique via le terminal. Donc voici les ét
 
 \vspace{0.3cm}
 
-Voila, nous avons reussi à lancer une application graphique X11 depuis le terminal.
+Voilà, nous avons réussi à lancer une application graphique X11 depuis le terminal.
 
 \newpage
 
@@ -1332,7 +1331,7 @@ Voila, nous avons reussi à lancer une application graphique X11 depuis le termi
 
 \vspace{0.3cm}
 
-Dans cette nouvelle étape, nous allons configurer ProxyJump de manière à pouvoir rebondir automatiquement sur cli lorsque l'on se connecte à srv. Pour ce faire, nous allons crée et modifier le fichier config comme ci-dessous : 
+Dans cette nouvelle étape, nous allons configurer ProxyJump de manière à pouvoir rebondir automatiquement sur cli lorsque l'on se connecte à srv. Pour ce faire, nous allons créer et modifier le fichier de configuration comme ci-dessous :
 
 \vspace{0.3cm}
 
@@ -1348,7 +1347,7 @@ Dans cette nouvelle étape, nous allons configurer ProxyJump de manière à pouv
 
 \vspace{0.3cm}
 
-Maintenant que nous avons configuer le fichier config, nous pouvons passer à la suite.
+Maintenant que nous avons configuré le fichier de configuration, nous pouvons passer à la suite.
 
 \vspace{0.3cm}
 
@@ -1358,7 +1357,7 @@ Maintenant que nous avons configuer le fichier config, nous pouvons passer à la
 
 \vspace{0.3cm}
 
-Maintenant que nous avons configuer ProxyJump, nous allons nous connecter au serveur srv. Une fois connecter, nous allons utiliser la commande who ci-dessous : 
+Maintenant que nous avons configuré ProxyJump, nous allons nous connecter au serveur srv. Une fois connectés, nous allons utiliser la commande who ci-dessous :
 
 \vspace{0.3cm}
 
@@ -1368,7 +1367,7 @@ Maintenant que nous avons configuer ProxyJump, nous allons nous connecter au ser
 
 \vspace{0.3cm}
 
-On peut constater que nous somme connecter au serveur srv en passant par le serveur cli. Donc le rebonds c'est bien effectué.
+On peut constater que nous sommes connectés au serveur 'srv' en passant par le serveur 'cli'. Donc, le rebond s'est bien effectué.
 
 \vspace{0.3cm}
 
@@ -1378,7 +1377,7 @@ On peut constater que nous somme connecter au serveur srv en passant par le serv
 
 \vspace{0.3cm}
 
-Pour cette nouvelle étape, nous allons utiliser ProxyCommand. Pour ce faire nous allons reprendre notre fichier config et le modifier comme ceci : 
+Pour cette nouvelle étape, nous allons utiliser ProxyCommand. Pour ce faire, nous allons reprendre notre fichier de configuration et le modifier comme ceci :
 
 \vspace{0.3cm}
 
@@ -1388,7 +1387,7 @@ Pour cette nouvelle étape, nous allons utiliser ProxyCommand. Pour ce faire nou
 
 \vspace{0.3cm}
 
-Maintenant que nous avons configuer le fichier config, nous pouvons passer à la suite.
+Maintenant que nous avons configuré le fichier de configuration, nous pouvons passer à la suite.
 
 \vspace{0.3cm}
 
@@ -1398,7 +1397,7 @@ Maintenant que nous avons configuer le fichier config, nous pouvons passer à la
 
 \vspace{0.3cm}
 
-Maintenant que nous avons configuer ProxyCommand, nous allons nous connecter au serveur srv. Une fois connecter, nous allons utiliser la commande who ci-dessous : 
+Maintenant que nous avons configuré ProxyCommand, nous allons nous connecter au serveur srv. Une fois connectés, nous allons utiliser la commande "who" ci-dessous :
 
 \vspace{0.3cm}
 
@@ -1408,7 +1407,7 @@ Maintenant que nous avons configuer ProxyCommand, nous allons nous connecter au 
 
 \vspace{0.3cm}
 
-On peut constater que nous somme connecté au serveur srv en passant par le serveur cli. Donc le rebonds c'est bien effectué.
+On peut constater que nous sommes connectés au serveur srv en passant par le serveur cli. Donc le rebond s'est bien effectué.
 
 \newpage
 
@@ -1422,7 +1421,7 @@ On peut constater que nous somme connecté au serveur srv en passant par le serv
 
 \vspace{0.3cm}
 
-Pour cette nouvelle étape, nous allons verifier que l'on peut couper une connexion SSH en utilisant une séquence d’échappement. Pour ce faire, nous allons dans une fenêtre SSH et nous allons utiliser ce caractére d'échapement : 
+Pour cette nouvelle étape, nous allons vérifier que l'on peut couper une connexion SSH en utilisant une séquence d'échappement. Pour ce faire, nous allons dans une fenêtre SSH et nous allons utiliser ce caractère d'échappement :
 
 \vspace{0.3cm}
 
@@ -1438,7 +1437,7 @@ Pour cette nouvelle étape, nous allons verifier que l'on peut couper une connex
 
 \vspace{0.3cm}
 
-On peut constater que nous avons reussie à mettre fin à la connexion SSH.
+On peut constater que nous avons réussi à mettre fin à la connexion SSH.
 
 \vspace{0.3cm}
 
@@ -1452,13 +1451,13 @@ On peut constater que nous avons reussie à mettre fin à la connexion SSH.
 
 \vspace{0.3cm}
 
-Pour cette nouvelle étape, nous allons installer screen sur cli. Pour ce faire, nous connecter à cli et taper la commande ci-dessous : 
+Pour cette nouvelle étape, nous allons installer Screen sur CLI. Pour ce faire, nous devons nous connecter à CLI et taper la commande ci-dessous :
 
 \texttt{sudo apt-get install screen}
 
 \vspace{0.3cm}
 
-Maintenant que nous avons installer screen, nous allons le lancer et taper une commande comme ci-dessous  : 
+Maintenant que nous avons installé screen, nous allons le lancer et taper une commande comme ci-dessous :
 
 \vspace{0.3cm}
 
@@ -1474,7 +1473,7 @@ Maintenant que nous avons installer screen, nous allons le lancer et taper une c
 
 \vspace{0.3cm}
 
-Maintenant que nous avons une commande en cours d'éxécution, nous allons quitter la session avec la combinaison de touche ci-dessous : 
+Maintenant que nous avons une commande en cours d'exécution, nous allons quitter la session avec la combinaison de touches ci-dessous :
 
 \texttt{Ctrl + ad}
 
@@ -1482,7 +1481,7 @@ Maintenant que nous avons une commande en cours d'éxécution, nous allons quitt
 
 \vspace{0.3cm}
 
-Une fois que nous avons quitter le terminal screen, nous allons y retourner avec la commande ci-dessous : 
+Une fois que nous avons quitté le terminal screen, nous allons y retourner avec la commande ci-dessous :
 
 \vspace{0.3cm}
 
@@ -1498,7 +1497,7 @@ Une fois que nous avons quitter le terminal screen, nous allons y retourner avec
 
 \vspace{0.3cm}
 
-On peut constater que nous avons retrouver notre terminal comme nous l'avons quitter.
+On peut constater que nous avons retrouvé notre terminal comme nous l'avons quitté.
 
 \vspace{0.3cm}
 
@@ -1508,13 +1507,13 @@ On peut constater que nous avons retrouver notre terminal comme nous l'avons qui
 
 \vspace{0.3cm}
 
-Pour cette nouvelle étape, nous allons installer tmux sur cli. Pour ce faire, nous connecter à cli et taper la commande ci-dessous : 
+Pour cette nouvelle étape, nous allons installer tmux sur la CLI. Pour ce faire, nous devons nous connecter à la CLI et taper la commande ci-dessous :
 
 \texttt{sudo apt-get install tmux}
 
 \vspace{0.3cm}
 
-Maintenant que nous avons installer tmux, nous allons le lancer et taper une commande comme ci-dessous  : 
+Maintenant que nous avons installé tmux, nous allons le lancer et taper une commande comme ci-dessous :
 
 \vspace{0.3cm}
 
@@ -1530,7 +1529,7 @@ Maintenant que nous avons installer tmux, nous allons le lancer et taper une com
 
 \vspace{0.3cm}
 
-Maintenant que nous avons une commande en cours d'éxécution, nous allons quitter la session avec la combinaison de touche ci-dessous : 
+Maintenant que nous avons une commande en cours d'exécution, nous allons quitter la session avec la combinaison de touches ci-dessous :
 
 \texttt{Ctrl + bd}
 
@@ -1538,7 +1537,7 @@ Maintenant que nous avons une commande en cours d'éxécution, nous allons quitt
 
 \vspace{0.3cm}
 
-Une fois que nous avons quitter le terminal screen, nous allons y retourner avec la commande ci-dessous : 
+Une fois que nous avons quitté le terminal screen, nous allons y retourner avec la commande ci-dessous : 
 
 \vspace{0.3cm}
 
@@ -1554,7 +1553,7 @@ Une fois que nous avons quitter le terminal screen, nous allons y retourner avec
 
 \vspace{0.3cm}
 
-On peut constater que nous avons retrouver notre terminal comme nous l'avons quitter.
+On peut constater que nous avons retrouvé notre terminal comme nous l'avons quitté.
 
 
 
