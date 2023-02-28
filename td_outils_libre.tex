@@ -1570,7 +1570,7 @@ On peut constater que nous avons retrouvé notre terminal comme nous l'avons qui
   \item Créer un nouveau répertoire et y initialiser un repository.
 \end{itemize}
 
-Pour cette nouvelle étape, nous allons créé un nouveaux répertoire et initialiser un repository. Pour ce faire, voici les étapes ci-dessous : 
+Pour cette nouvelle étape, nous allons créer un nouveau répertoire et initialiser un dépôt. Pour ce faire, voici les étapes ci-dessous :
 
 \vspace{0.3cm}
 
@@ -1596,14 +1596,14 @@ Pour cette nouvelle étape, nous allons créé un nouveaux répertoire et initia
   \item Y copier la configuration Vagrant des TD ssh (Vagrantfile + dossier srv).
 \end{itemize}
 
-Maintenant que nous avons initialiser notre repository, nous allons copier les fichiers demander dans la questions. Voici la commande pour copier les fichiers : 
+Maintenant que nous avons initialisé notre dépôt (ou repository), nous allons copier les fichiers demandés dans la question. Voici la commande pour copier les fichiers :
 
 \texttt{cp -r /chemin/Vagrantfile /chemin/td-git} \\
 \texttt{cp -r /chemin/srv /chemin/td-git}
 
 \vspace{0.3cm}
 
-Un fois que l'on à copier les bons documents au bonne endroits, nous pouvons passez à la question suivante. 
+Une fois que l'on a copié les bons documents aux bons endroits, nous pouvons passer à la question suivante 
 
 \vspace{0.3cm}
 
@@ -1613,7 +1613,7 @@ Un fois que l'on à copier les bons documents au bonne endroits, nous pouvons pa
 
 \vspace{0.3cm}
 
-Pour regarder les informations détectées par git, nous allons utiliser la commande suivante : 
+Pour consulter les informations détectées par Git, nous allons utiliser la commande suivante :
 
 \texttt{git status}
 
@@ -1629,13 +1629,13 @@ Pour regarder les informations détectées par git, nous allons utiliser la comm
   \item Démarrer puis arrêter la configuration Vagrant.
 \end{itemize}
 
-Pour démarrer puis arrêter la configuration Vagrant, nous allons utiliser ses deux commande ci-dessous : \newline
+Pour démarrer puis arrêter la configuration Vagrant, nous allons utiliser ces deux commandes ci-dessous : \newline
 
-Pour démarrer : 
+Pour démarrer les machines virtuelle : 
 
 \texttt{vagrant up}
 
-Pour démarrer : 
+Pour éteindre les machines virtuelles : 
 
 \texttt{vagrant halt}
 
@@ -1647,7 +1647,7 @@ Pour démarrer :
   \item Regarder à nouveau les modifications détectées par git.
 \end{itemize}
 
-Pour cette nouvelle étapes, nous allons regarder de nouveaux les modification détectées par git. Voici ci-dessous, les modification détectées par git : 
+Pour cette nouvelle étape, nous allons regarder de nouveau les modifications détectées par Git. Voici ci-dessous les modifications détectées par Git :
 
 \vspace{0.3cm}
 
@@ -1661,9 +1661,9 @@ Pour cette nouvelle étapes, nous allons regarder de nouveaux les modification d
   \item Que remarque-t-on ? Comment peut-on régler le problème ?
 \end{itemize}
 
-On peut constater que nous avons actuellement sur la branche master, des fichiers non suivie et qu'il n'y a pas eu de commit fait. \newline
+On peut constater que sur la branche master, nous avons actuellement des fichiers non suivis et qu'il n'y a pas eu de commit effectué. \newline
 
-Pour régler le probléme, il suffit à d'ajouter les fichier et de faire un commit tout en ignorant le dossier .vagrant.
+Pour régler le problème, il suffit d'ajouter les fichiers et de faire un commit, tout en ignorant le dossier .vagrant.
 
 \vspace{0.3cm}
 
@@ -1671,9 +1671,9 @@ Pour régler le probléme, il suffit à d'ajouter les fichier et de faire un com
   \item Ajouter les fichiers Vagrant et commit les modifications.
 \end{itemize}
 
-Avant d'ajouter les fichiers Vagrant et commit les modifications, nous allons faire en sorte que git igonore le dossier .vagrant. \newline
+Avant d'ajouter les fichiers Vagrant et de commiter les modifications, nous allons faire en sorte que Git ignore le dossier .vagrant. \newline
 
-Pour ce faire, nous allons créé un fichier .gitignore et ajouter la ligne .vagrant comme ci-dessous : 
+Pour ce faire, nous allons créer un fichier .gitignore et ajouter la ligne .vagrant comme ci-dessous :
 
 \vspace{0.3cm}
 
@@ -1683,7 +1683,7 @@ Pour ce faire, nous allons créé un fichier .gitignore et ajouter la ligne .vag
 
 \vspace{0.3cm}
 
-Maintenant que nous avons ignorer le dossier .vagrant, nous allons ajouter les fichiers Vagrant et commit les modifications. Voici les étapes ci-dessous : 
+Maintenant que nous avons ignoré le dossier .vagrant, nous allons ajouter les fichiers Vagrant et committer les modifications. Voici les étapes ci-dessous :
 
 \vspace{0.3cm}
 
@@ -1691,7 +1691,7 @@ Maintenant que nous avons ignorer le dossier .vagrant, nous allons ajouter les f
   \includegraphics[width=7cm]{Image-TD-Git-1/git add.png}
 \end{center}
 
-Une fois que nous avons ajouter les fichiers Vagrant, nous allons crée un commit comme ci-dessous : 
+Une fois que nous avons ajouté les fichiers Vagrant, nous allons créer un commit comme ci-dessous :
 
 \vspace{0.3cm}
 
@@ -1701,7 +1701,7 @@ Une fois que nous avons ajouter les fichiers Vagrant, nous allons crée un commi
 
 \vspace{0.3cm}
 
-Voila nous avons commit et ajouter les fichiers Vagrant.
+Voilà, nous avons commit et ajouté les fichiers Vagrant.
 
 \vspace{0.3cm}
 
@@ -1711,7 +1711,7 @@ Voila nous avons commit et ajouter les fichiers Vagrant.
 
 \vspace{0.3cm}
 
-Pour verifier que le commit est bien présent et correct, nous allons utiliser la commande suivants : 
+Pour vérifier que le commit est bien présent et correct, nous allons utiliser la commande suivante :
 
 \texttt{git log}
 
@@ -1737,7 +1737,7 @@ On peut constater que notre commit est bien présent et correct.
 
 \vspace{0.3cm}
 
-Dans cette nouvelle partie, nous allons créé une nouvelle branche. Pour ce faire, nous allons utiliser la commande suivante : 
+Dans cette nouvelle partie, nous allons créer une nouvelle branche. Pour ce faire, nous allons utiliser la commande suivante :
 
 \texttt{git checkout -b "nom-de-la-branche"}
 
@@ -1755,7 +1755,7 @@ Dans cette nouvelle partie, nous allons créé une nouvelle branche. Pour ce fai
 
 \vspace{0.3cm}
 
-Pour cette nouvelle étapes, nous allons ajouter l'utilisateur patrick comme ci-dessous : 
+Pour cette nouvelle étape, nous allons ajouter l'utilisateur Patrick comme ci-dessous :
 
 \vspace{0.3cm}
 
@@ -1771,7 +1771,7 @@ Pour cette nouvelle étapes, nous allons ajouter l'utilisateur patrick comme ci-
 
 \vspace{0.3cm}
 
-Pour cette nouvelle étapes, nous allons installer php et l'activer sur apache comme ci-dessous : 
+Pour cette nouvelle étape, nous allons installer PHP et l'activer sur Apache comme ci-dessous :
 
 \vspace{0.3cm}
 
@@ -1787,17 +1787,17 @@ Pour cette nouvelle étapes, nous allons installer php et l'activer sur apache c
 
 \vspace{0.3cm}
 
-Pour cette nouvelle étapes, nous allons effectuer 2 commits distincts à l'aide de la commande git add -p. Voici les étapes ci-dessous : 
+Pour cette nouvelle étape, nous allons effectuer 2 commits distincts à l'aide de la commande git add -p. Voici les étapes ci-dessous :
 
 \vspace{0.3cm}
 
-Pour commencer, nous allons taper la commande suivante : 
+Pour commencer, nous allons taper la commande suivante :
 
 \texttt{git add -p Vagrantfile}
 
 \vspace{0.3cm}
 
-Ensuite nous allons cliquer sur Y. 
+Ensuite, nous allons entrer Y.
 
 \vspace{0.3cm}
 
@@ -1809,7 +1809,7 @@ Ensuite nous allons cliquer sur Y.
 
 \newpage
 
-Ensuite, nous allons faire un commits comme ci-dessous : 
+Ensuite, nous allons faire un commit comme ci-dessous :
 
 \vspace{0.3cm}
 
@@ -1819,17 +1819,17 @@ Ensuite, nous allons faire un commits comme ci-dessous :
 
 \vspace{0.3cm}
 
-Maintenant que nous avons fait le premier commit, nous allons effectuer le deuxième. Voici les étapes ci-dessous : 
+Maintenant que nous avons effectué le premier commit, nous allons procéder au deuxième. Voici les étapes ci-dessous :
 
 \vspace{0.3cm}
 
-Nous allons retaper la commande suivante : 
+Nous allons retaper la commande suivante :
 
 \texttt{git add -p Vagrantfile}
 
 \vspace{0.3cm}
 
-Ensuite nous allons cliquer sur Y. 
+Ensuite, nous allons entrer Y.
 
 \vspace{0.3cm}
 
@@ -1840,7 +1840,7 @@ Ensuite nous allons cliquer sur Y.
 
 \vspace{0.3cm}
 
-Ensuite, nous allons faire un commits comme ci-dessous : 
+Ensuite, nous allons faire un commit comme ci-dessous :
 
 \vspace{0.3cm}
 
@@ -1850,7 +1850,7 @@ Ensuite, nous allons faire un commits comme ci-dessous :
 
 \vspace{0.3cm}
 
-Voila, nous avons effectuer 2 commits distincts.
+Voilà, nous avons effectué 2 commits distincts.
 
 \vspace{0.3cm}
 
@@ -1860,7 +1860,7 @@ Voila, nous avons effectuer 2 commits distincts.
 
 \vspace{0.3cm}
 
-Pour revenir à la branche main ou master, il suffit de taper la commande suivante : 
+Pour revenir à la branche main ou master, il suffit de taper la commande suivante :
 
 \texttt{git checkout main ou master}
 
@@ -1872,7 +1872,7 @@ Pour revenir à la branche main ou master, il suffit de taper la commande suivan
 
 \vspace{0.3cm}
 
-On peut constater que dans notre working directory, nous avons plus les fichier Vagrants. Pour les revoir, il suffit juste de retoruner sur notre autre branche et de push vers master.
+On peut constater que dans notre répertoire de travail (working directory), nous n'avons plus les fichiers Vagrants. Pour les revoir, il suffit simplement de retourner sur notre autre branche et de pousser vers master.
 
 
 \newpage
@@ -1887,7 +1887,7 @@ On peut constater que dans notre working directory, nous avons plus les fichier 
 
 \vspace{0.3cm}
 
-Pour reintégrer les modification de code de l'exercice précédent dans main, nous allons utiliser la commande suivante : 
+Pour réintégrer les modifications de code de l'exercice précédent dans main, nous allons utiliser la commande suivante :
 
 \texttt{git merge nom-de-la-branche}
 
@@ -1905,7 +1905,7 @@ Pour reintégrer les modification de code de l'exercice précédent dans main, n
 
 \vspace{0.3cm}
 
-Pour intégrer le commit de merge, nous allons utiliser la commande suivant : 
+Pour intégrer le commit de merge, nous allons utiliser la commande suivante :
 
 \texttt{git log --online}
 
@@ -1917,7 +1917,7 @@ Pour intégrer le commit de merge, nous allons utiliser la commande suivant :
 
 \vspace{0.3cm}
 
-On peut constater que nous n'avons pas de sépicifités, juste que maintenant, la branche ma-nouvelle-branche et attaché à la branche master.
+On peut constater que nous n'avons pas de spécificités, juste qu'à présent, la branche ma-nouvelle-branche est attachée à la branche master.
 
 \vspace{0.3cm}
 
@@ -1927,7 +1927,7 @@ On peut constater que nous n'avons pas de sépicifités, juste que maintenant, l
 
 \vspace{0.3cm}
 
-Oui la branche que nous avons créé existe toujours. On peut la garder pour des modification future dessus et ensuite, on pourra posser les modification sur la branche principale/
+Oui, la branche que nous avons créée existe toujours. On peut la garder pour des modifications futures dessus, et ensuite, on pourra poser les modifications sur la branche principale.
 
 \newpage
 
@@ -1941,7 +1941,7 @@ Oui la branche que nous avons créé existe toujours. On peut la garder pour des
 
 \vspace{0.3cm}
 
-Pour commencer, nous allons créé une nouvelle branche sur main ou master. Pour ce faire, nous allons utiliser la commande suivante : 
+Pour commencer, nous allons créer une nouvelle branche sur main ou master. Pour cela, nous allons utiliser la commande suivante :
 
 \texttt{git checkout -b forward-new-port}
 
@@ -1959,7 +1959,7 @@ Pour commencer, nous allons créé une nouvelle branche sur main ou master. Pour
 
 \vspace{0.3cm}
 
-Pour cette nouvelle étape, nous allons modifier le Vagranfile comme l'indiquer dans la question : 
+Pour cette nouvelle étape, nous allons modifier le Vagranfile comme indiqué dans la question :
 
 \vspace{0.3cm}
 
@@ -1973,7 +1973,7 @@ Modification du Vagrantfile :
 
 \vspace{0.3cm}
 
-Une fois que nous avons modifier le Vagrantfile, on peut enregistrer et faire un commits comme ci-dessous : 
+Une fois que nous avons modifié le Vagrantfile, on peut l'enregistrer et faire un commit comme ci-dessous :
 
 \vspace{0.3cm}
 
@@ -2005,7 +2005,7 @@ Modification du Vagrantfile :
 
 \vspace{0.3cm}
 
-Une fois que nous avons modifier le Vagrantfile, on peut enregistrer et faire un commits comme ci-dessous : 
+Une fois que nous avons modifié le Vagrantfile, on peut l'enregistrer et faire un commit comme ci-dessous :
 
 \vspace{0.3cm}
 
@@ -2025,7 +2025,7 @@ Une fois que nous avons modifier le Vagrantfile, on peut enregistrer et faire un
 
 \vspace{0.3cm}
 
-Pour merger forward-new-port dans main, nous allons aller sur la branche main ou master et taper la commande suiavnte : 
+Pour fusionner forward-new-port dans la branche principale (main), nous allons nous rendre sur la branche main ou master et taper la commande suivante :
 
 \texttt{git merge forward-new-port}
 
@@ -2043,11 +2043,11 @@ Pour merger forward-new-port dans main, nous allons aller sur la branche main ou
 
 \vspace{0.3cm}
 
-On peut constater que nous avons des conflits. Pour remédier à cela il suffit de faire les étapes suivantes : 
+On peut constater que nous avons des conflits. Pour remédier à cela, il suffit de suivre les étapes suivantes :
 
 \vspace{0.3cm}
 
-Pour commencer, nous allons faire un git add comme ci-dessous : 
+Pour commencer, nous allons faire un git add comme ci-dessous :
 
 \vspace{0.3cm}
 
@@ -2057,7 +2057,7 @@ Pour commencer, nous allons faire un git add comme ci-dessous :
 
 \vspace{0.3cm}
 
-Une fois que nous avons fait un git add, nous allons faire un commit comme ci-dessous : 
+Une fois que nous avons effectué un git add, nous allons faire un commit comme ci-dessous :
 
 \vspace{0.3cm}
 
@@ -2073,7 +2073,7 @@ Une fois que nous avons fait un git add, nous allons faire un commit comme ci-de
 
 \vspace{0.3cm}
 
-Et voila, nous avons réglée les problèmes de conflits.
+Et voilà, nous avons réglé les problèmes de conflits.
 
 \newpage
 
@@ -2087,13 +2087,13 @@ Et voila, nous avons réglée les problèmes de conflits.
 
 \vspace{0.3cm}
 
-Pour cette dernière partie, nous allons mettre en place une clé SSH sur GitHub pour éviter de taper son mot de passe à chaque push. \\
+Pour cette dernière partie, nous allons mettre en place une clé SSH sur GitHub afin d'éviter de taper son mot de passe à chaque push. \\
 
-Voici les étapes pour la mettre en place : 
+Voici les étapes pour la mettre en place :
 
 \vspace{0.3cm}
 
-Tout d'abord, vous allez sur votre compte github et vous aller dans les paramétre de votre compte comme ci-dessous : 
+Tout d'abord, vous allez sur votre compte GitHub et vous allez dans les paramètres de votre compte, comme ci-dessous :
 
 \vspace{0.3cm}
 
@@ -2103,7 +2103,7 @@ Tout d'abord, vous allez sur votre compte github et vous aller dans les paramét
 
 \vspace{0.3cm}
 
-Un fois que vous étes dans les paramétre, vous cliquer sur SSH and GPG keys comme ci-dessous : 
+Une fois que vous êtes dans les paramètres, vous cliquez sur SSH and GPG keys comme ci-dessous :
 
 \vspace{0.3cm}
 
@@ -2111,7 +2111,7 @@ Un fois que vous étes dans les paramétre, vous cliquer sur SSH and GPG keys co
   \includegraphics[width=7cm]{Image-TD-Git-5/ssh-gpg.png}
 \end{center}
 
-Une fois que vous avez cliquer au bonne endroid, vous aller cliquer sur new key ssh : 
+Une fois que vous avez cliqué au bon endroit, vous allez cliquer sur New Key SSH.
 
 \vspace{0.3cm}
 
@@ -2121,7 +2121,7 @@ Une fois que vous avez cliquer au bonne endroid, vous aller cliquer sur new key 
 
 \vspace{0.3cm}
 
-Ensuite, vous remplissez les champs en dessous en laissans par défault Key type. Ensuite cliquer sur Add SSH key.
+Ensuite, vous remplissez les champs en dessous en laissant par défaut Key type. Ensuite, cliquez sur Add SSH key.
 
 \vspace{0.3cm}
 
@@ -2137,7 +2137,7 @@ Ensuite, vous remplissez les champs en dessous en laissans par défault Key type
 
 \vspace{0.3cm}
 
-Et voila, vous avez ajouter votre clé ssh à github.
+Et voilà, vous avez ajouté votre clé SSH à GitHub.
 
 \vspace{0.3cm}
 
@@ -2147,9 +2147,9 @@ Et voila, vous avez ajouter votre clé ssh à github.
 
 \vspace{0.3cm}
 
-Dans cette étape, je vais remettre à l'état mon repository local aprés l'exercice 1. 
+Dans cette étape, je vais remettre mon dépôt local à l'état initial après l'exercice 1
 
-Je ne vais pas vous montrer comme j'ai remit à l'état aprés l'exercice 1 mon repository local car cela n'a pas d'intérer.
+Je ne vais pas vous montrer comment j'ai remis à l'état après l'exercice 1 mon dépôt local, car cela n'a pas vraiment d'intérêt.
 
 \vspace{0.3cm}
 
@@ -2159,9 +2159,9 @@ Je ne vais pas vous montrer comme j'ai remit à l'état aprés l'exercice 1 mon 
 
 \vspace{0.3cm}
 
-Pour cette dernière étapes, je ne vais pas vous remontrer aussi les exercice 2 et 3 car cela n'a pas d'intérer. \newline
+Pour cette dernière étape, je ne vais pas vous montrer à nouveau les exercices 2 et 3 car cela n'a pas d'intérêt. \newline
 
-Mais pour chaque commit ou création de branche ou merge, au lieux de rester en local, j'ai tout push vers mon repository distant avec ses deux commandes suivante :
+Mais pour chaque commit, création de branche ou fusion, au lieu de rester en local, j'ai tout poussé vers mon dépôt distant avec ces deux commandes suivantes :
 
 \texttt{git remote add origin "le nom du repository distant crée sur github"}
 
@@ -2169,7 +2169,7 @@ Mais pour chaque commit ou création de branche ou merge, au lieux de rester en 
 
 \vspace{0.3cm}
 
-Voici le résultat de mon repository sur Github : 
+Voici le résultat de mon dépôt (ou repository en anglais) sur Github :
 
 \vspace{0.3cm}
 
