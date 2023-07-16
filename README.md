@@ -1,2 +1,2 @@
 # TD-Outils_Libre-Latex
- Sythèse TD réaliser en cours d'Outils-Libre 
+TD réalisées en cours d'Outils-Libre en licence professionnelle à IUT Nancy-Charlemagne
